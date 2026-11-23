@@ -1,0 +1,2927 @@
+{
+  "V-BEX-001": {
+    "id": "V-BEX-001",
+    "face": {
+      "front": {
+        "name": "Allie, Sun Goddess",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/V-BEX-001.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Allie, Sun Goddess",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-002": {
+    "id": "BEX-002",
+    "face": {
+      "front": {
+        "name": "Gador, The Invigorator",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-002.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Gador, The Invigorator",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-003": {
+    "id": "BEX-003",
+    "face": {
+      "front": {
+        "name": "K'vola, Dunewalker",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-003.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "K'vola, Dunewalker",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-004": {
+    "id": "BEX-004",
+    "face": {
+      "front": {
+        "name": "Lepo, Soul Shifter",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-004.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Lepo, Soul Shifter",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-005": {
+    "id": "BEX-005",
+    "face": {
+      "front": {
+        "name": "Nimin, The Consumed",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-005.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Nimin, The Consumed",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-006": {
+    "id": "BEX-006",
+    "face": {
+      "front": {
+        "name": "Syn, Lightweaver",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-006.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Syn, Lightweaver",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-007": {
+    "id": "BEX-007",
+    "face": {
+      "front": {
+        "name": "Zero, Snowdrifter",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-007.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Zero, Snowdrifter",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-008": {
+    "id": "BEX-008",
+    "face": {
+      "front": {
+        "name": "Angelica, the Enchanted",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-008.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Angelica, the Enchanted",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-009": {
+    "id": "BEX-009",
+    "face": {
+      "front": {
+        "name": "Donovan, Jug Blower",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-009.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Donovan, Jug Blower",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-010": {
+    "id": "BEX-010",
+    "face": {
+      "front": {
+        "name": "Vin, Sound Slasher",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-010.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Vin, Sound Slasher",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-011": {
+    "id": "BEX-011",
+    "face": {
+      "front": {
+        "name": "Rovil, Marching Fox",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-011.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Rovil, Marching Fox",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-012": {
+    "id": "BEX-012",
+    "face": {
+      "front": {
+        "name": "Lyssa, Light Dancer",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-012.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Lyssa, Light Dancer",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-013": {
+    "id": "BEX-013",
+    "face": {
+      "front": {
+        "name": "Nocturne, Dark Dancer",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-013.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Nocturne, Dark Dancer",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-014": {
+    "id": "BEX-014",
+    "face": {
+      "front": {
+        "name": "Talia, The Swaying Sylph",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-014.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Talia, The Swaying Sylph",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-015": {
+    "id": "BEX-015",
+    "face": {
+      "front": {
+        "name": "Cray, The Unhinged",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-015.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Cray, The Unhinged",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-016": {
+    "id": "BEX-016",
+    "face": {
+      "front": {
+        "name": "Diana, Twinblade",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-016.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Diana, Twinblade",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-017": {
+    "id": "BEX-017",
+    "face": {
+      "front": {
+        "name": "Emron, Forest Walker",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-017.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Emron, Forest Walker",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-018": {
+    "id": "BEX-018",
+    "face": {
+      "front": {
+        "name": "Gabriel, The Barricade",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-018.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Gabriel, The Barricade",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-019": {
+    "id": "BEX-019",
+    "face": {
+      "front": {
+        "name": "Gurok, Omen Breaker",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-019.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Gurok, Omen Breaker",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-020": {
+    "id": "BEX-020",
+    "face": {
+      "front": {
+        "name": "Jess, Ghost Blade",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-020.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Jess, Ghost Blade",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-021": {
+    "id": "BEX-021",
+    "face": {
+      "front": {
+        "name": "Protus, Goblin Scout",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-021.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Protus, Goblin Scout",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-022": {
+    "id": "BEX-022",
+    "face": {
+      "front": {
+        "name": "Zeova, Apprentice Mage",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-022.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Zeova, Apprentice Mage",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-023": {
+    "id": "BEX-023",
+    "face": {
+      "front": {
+        "name": "Kizzy, Magical Purist",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-023.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Kizzy, Magical Purist",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-024": {
+    "id": "BEX-024",
+    "face": {
+      "front": {
+        "name": "Edict, Young Wizard",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-024.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Edict, Young Wizard",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-025": {
+    "id": "BEX-025",
+    "face": {
+      "front": {
+        "name": "Helbrin, Dwarven Mage",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-025.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Helbrin, Dwarven Mage",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-026": {
+    "id": "BEX-026",
+    "face": {
+      "front": {
+        "name": "Vexus, Voidheart",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-026.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Vexus, Voidheart",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-027": {
+    "id": "BEX-027",
+    "face": {
+      "front": {
+        "name": "Refi, Dungeon Delver",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-027.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Refi, Dungeon Delver",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-028": {
+    "id": "BEX-028",
+    "face": {
+      "front": {
+        "name": "Tac, Cosmic Champion",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-028.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Tac, Cosmic Champion",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-029": {
+    "id": "BEX-029",
+    "face": {
+      "front": {
+        "name": "Anne, Light Crusader",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-029.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Anne, Light Crusader",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-030": {
+    "id": "BEX-030",
+    "face": {
+      "front": {
+        "name": "Sigurd, Holy Abomination",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-030.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Sigurd, Holy Abomination",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-031": {
+    "id": "BEX-031",
+    "face": {
+      "front": {
+        "name": "Jasper, Spirit Scholar",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-031.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Jasper, Spirit Scholar",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-032": {
+    "id": "BEX-032",
+    "face": {
+      "front": {
+        "name": "Kratos, Herbal Mystic",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-032.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Kratos, Herbal Mystic",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-033": {
+    "id": "BEX-033",
+    "face": {
+      "front": {
+        "name": "Alex, Pure Hearted",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-033.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Alex, Pure Hearted",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-034": {
+    "id": "BEX-034",
+    "face": {
+      "front": {
+        "name": "Paige, Lake Spirit",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-034.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Paige, Lake Spirit",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-035": {
+    "id": "BEX-035",
+    "face": {
+      "front": {
+        "name": "Trinity, The Absolver",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-035.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Trinity, The Absolver",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-036": {
+    "id": "BEX-036",
+    "face": {
+      "front": {
+        "name": "Akmir, Rust Blade",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-036.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Akmir, Rust Blade",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-037": {
+    "id": "BEX-037",
+    "face": {
+      "front": {
+        "name": "Hyla, Bog Lurker",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-037.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Hyla, Bog Lurker",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-038": {
+    "id": "BEX-038",
+    "face": {
+      "front": {
+        "name": "Karn, Blood Prowler",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-038.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Karn, Blood Prowler",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-039": {
+    "id": "BEX-039",
+    "face": {
+      "front": {
+        "name": "Menja, Woodslinger",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-039.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Menja, Woodslinger",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-040": {
+    "id": "BEX-040",
+    "face": {
+      "front": {
+        "name": "Vesta, Dark Guide",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-040.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Vesta, Dark Guide",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-041": {
+    "id": "BEX-041",
+    "face": {
+      "front": {
+        "name": "Warren, Bandit Chief",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-041.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Warren, Bandit Chief",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-042": {
+    "id": "BEX-042",
+    "face": {
+      "front": {
+        "name": "Ying, Ghostblade",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-042.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Ying, Ghostblade",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-043": {
+    "id": "BEX-043",
+    "face": {
+      "front": {
+        "name": "Vetro, The Astonisher",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-043.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Vetro, The Astonisher",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "A-BEX-044": {
+    "id": "A-BEX-044",
+    "face": {
+      "front": {
+        "name": "Koba, The Distorted",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/A-BEX-044.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Koba, The Distorted",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-045": {
+    "id": "BEX-045",
+    "face": {
+      "front": {
+        "name": "Kylie, Woodblossom",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-045.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Kylie, Woodblossom",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-046": {
+    "id": "BEX-046",
+    "face": {
+      "front": {
+        "name": "Moira, Autumn Wraith",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-046.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Moira, Autumn Wraith",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-047": {
+    "id": "BEX-047",
+    "face": {
+      "front": {
+        "name": "Oblok, Living Slime",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-047.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Oblok, Living Slime",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-048": {
+    "id": "BEX-048",
+    "face": {
+      "front": {
+        "name": "Zalax, The Reincarnated",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-048.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Zalax, The Reincarnated",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-049": {
+    "id": "BEX-049",
+    "face": {
+      "front": {
+        "name": "Argus, Archon of Fire",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-049.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Argus, Archon of Fire",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-050": {
+    "id": "BEX-050",
+    "face": {
+      "front": {
+        "name": "Amber, The Scribe",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-050.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Amber, The Scribe",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-051": {
+    "id": "BEX-051",
+    "face": {
+      "front": {
+        "name": "Grundle, Earthshaker",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-051.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Grundle, Earthshaker",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-052": {
+    "id": "BEX-052",
+    "face": {
+      "front": {
+        "name": "Kodi, The Strategist",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-052.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Kodi, The Strategist",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-053": {
+    "id": "BEX-053",
+    "face": {
+      "front": {
+        "name": "Sora, Drifting Shadow",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-053.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Sora, Drifting Shadow",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-054": {
+    "id": "BEX-054",
+    "face": {
+      "front": {
+        "name": "Tobin, Willbreaker",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-054.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Tobin, Willbreaker",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-055": {
+    "id": "BEX-055",
+    "face": {
+      "front": {
+        "name": "Trent, The Ageless",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-055.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Trent, The Ageless",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-056": {
+    "id": "BEX-056",
+    "face": {
+      "front": {
+        "name": "Tristan, The Scrounger",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-056.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Tristan, The Scrounger",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-057": {
+    "id": "BEX-057",
+    "face": {
+      "front": {
+        "name": "Abandon Plans",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-057.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Abandon Plans",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-058": {
+    "id": "BEX-058",
+    "face": {
+      "front": {
+        "name": "Adrenaline",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-058.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Adrenaline",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-059": {
+    "id": "BEX-059",
+    "face": {
+      "front": {
+        "name": "Aeroblade",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-059.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Aeroblade",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-060": {
+    "id": "BEX-060",
+    "face": {
+      "front": {
+        "name": "Aurora",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-060.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Aurora",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-061": {
+    "id": "BEX-061",
+    "face": {
+      "front": {
+        "name": "Cursed Aura",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-061.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Cursed Aura",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-062": {
+    "id": "BEX-062",
+    "face": {
+      "front": {
+        "name": "Crescendo",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-062.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Crescendo",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-063": {
+    "id": "BEX-063",
+    "face": {
+      "front": {
+        "name": "Gravity",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-063.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Gravity",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-064": {
+    "id": "BEX-064",
+    "face": {
+      "front": {
+        "name": "Eulogy",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-064.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Eulogy",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-065": {
+    "id": "BEX-065",
+    "face": {
+      "front": {
+        "name": "Ghost Note",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-065.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Ghost Note",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "A-BEX-066": {
+    "id": "A-BEX-066",
+    "face": {
+      "front": {
+        "name": "Astral Blade",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/A-BEX-066.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Astral Blade",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-067": {
+    "id": "BEX-067",
+    "face": {
+      "front": {
+        "name": "Mobilize",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-067.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Mobilize",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-068": {
+    "id": "BEX-068",
+    "face": {
+      "front": {
+        "name": "Stargazing",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-068.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Stargazing",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "A-BEX-069": {
+    "id": "A-BEX-069",
+    "face": {
+      "front": {
+        "name": "Peaceful Melody",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/A-BEX-069.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Peaceful Melody",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-070": {
+    "id": "BEX-070",
+    "face": {
+      "front": {
+        "name": "Power Chord",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-070.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Power Chord",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "B-BEX-071": {
+    "id": "B-BEX-071",
+    "face": {
+      "front": {
+        "name": "Prism Shield",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/B-BEX-071.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Prism Shield",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-072": {
+    "id": "BEX-072",
+    "face": {
+      "front": {
+        "name": "Reclamation",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-072.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Reclamation",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-073": {
+    "id": "BEX-073",
+    "face": {
+      "front": {
+        "name": "Sabotage",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-073.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Sabotage",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "B-BEX-074": {
+    "id": "B-BEX-074",
+    "face": {
+      "front": {
+        "name": "Oddstone Guard",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/B-BEX-074.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Oddstone Guard",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-075": {
+    "id": "BEX-075",
+    "face": {
+      "front": {
+        "name": "Slow",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-075.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Slow",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-076": {
+    "id": "BEX-076",
+    "face": {
+      "front": {
+        "name": "Lilypad Tempo",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-076.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Lilypad Tempo",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-077": {
+    "id": "BEX-077",
+    "face": {
+      "front": {
+        "name": "Tough Choices",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-077.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Tough Choices",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "B-BEX-078": {
+    "id": "B-BEX-078",
+    "face": {
+      "front": {
+        "name": "Veil of Ignorance",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/B-BEX-078.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Veil of Ignorance",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-079": {
+    "id": "BEX-079",
+    "face": {
+      "front": {
+        "name": "Divinity",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-079.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Divinity",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "B-BEX-080": {
+    "id": "B-BEX-080",
+    "face": {
+      "front": {
+        "name": "Soundwave",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/B-BEX-080.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Soundwave",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus"
+  },
+  "BEX-081": {
+    "id": "BEX-081",
+    "face": {
+      "front": {
+        "name": "Distract",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-081.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Distract",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-082": {
+    "id": "BEX-082",
+    "face": {
+      "front": {
+        "name": "Divine Spear",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-082.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Divine Spear",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-083": {
+    "id": "BEX-083",
+    "face": {
+      "front": {
+        "name": "Saint's Seal",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-083.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Saint's Seal",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-084": {
+    "id": "BEX-084",
+    "face": {
+      "front": {
+        "name": "Golden Phantom",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-084.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Golden Phantom",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "A-BEX-085": {
+    "id": "A-BEX-085",
+    "face": {
+      "front": {
+        "name": "Light Guard",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/A-BEX-085.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Light Guard",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-086": {
+    "id": "BEX-086",
+    "face": {
+      "front": {
+        "name": "Divine Shroud",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-086.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Divine Shroud",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-087": {
+    "id": "BEX-087",
+    "face": {
+      "front": {
+        "name": "Merchant's Curse",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-087.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Merchant's Curse",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-088": {
+    "id": "BEX-088",
+    "face": {
+      "front": {
+        "name": "Magic Mist",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-088.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Magic Mist",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-089": {
+    "id": "BEX-089",
+    "face": {
+      "front": {
+        "name": "Protection",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-089.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Protection",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-090": {
+    "id": "BEX-090",
+    "face": {
+      "front": {
+        "name": "Shine",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-090.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Shine",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-091": {
+    "id": "BEX-091",
+    "face": {
+      "front": {
+        "name": "Silence",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-091.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Silence",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "V-BEX-092": {
+    "id": "V-BEX-092",
+    "face": {
+      "front": {
+        "name": "Holy Cyclone",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/V-BEX-092.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Holy Cyclone",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-093": {
+    "id": "BEX-093",
+    "face": {
+      "front": {
+        "name": "Vivid Visions",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-093.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Vivid Visions",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-094": {
+    "id": "BEX-094",
+    "face": {
+      "front": {
+        "name": "Void Seal",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-094.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Void Seal",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-095": {
+    "id": "BEX-095",
+    "face": {
+      "front": {
+        "name": "Discharge",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-095.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Discharge",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-096": {
+    "id": "BEX-096",
+    "face": {
+      "front": {
+        "name": "Quaking Circle",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-096.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Quaking Circle",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "V-BEX-097": {
+    "id": "V-BEX-097",
+    "face": {
+      "front": {
+        "name": "Armageddon",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/V-BEX-097.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Armageddon",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-098": {
+    "id": "BEX-098",
+    "face": {
+      "front": {
+        "name": "Burning Ray",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-098.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Burning Ray",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-099": {
+    "id": "BEX-099",
+    "face": {
+      "front": {
+        "name": "Drain",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-099.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Drain",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-100": {
+    "id": "BEX-100",
+    "face": {
+      "front": {
+        "name": "Flame Shot",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-100.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Flame Shot",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-101": {
+    "id": "BEX-101",
+    "face": {
+      "front": {
+        "name": "Frost",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-101.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Frost",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "H-BEX-102": {
+    "id": "H-BEX-102",
+    "face": {
+      "front": {
+        "name": "Granite Discs",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/H-BEX-102.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Granite Discs",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-103": {
+    "id": "BEX-103",
+    "face": {
+      "front": {
+        "name": "Magic Missile",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-103.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Magic Missile",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-104": {
+    "id": "BEX-104",
+    "face": {
+      "front": {
+        "name": "Mind Link",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-104.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Mind Link",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-105": {
+    "id": "BEX-105",
+    "face": {
+      "front": {
+        "name": "Momentum",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-105.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Momentum",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-106": {
+    "id": "BEX-106",
+    "face": {
+      "front": {
+        "name": "Sandstorm",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-106.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Sandstorm",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-107": {
+    "id": "BEX-107",
+    "face": {
+      "front": {
+        "name": "Soulcharge",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-107.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Soulcharge",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-108": {
+    "id": "BEX-108",
+    "face": {
+      "front": {
+        "name": "Shadow Lance",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-108.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Shadow Lance",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-109": {
+    "id": "BEX-109",
+    "face": {
+      "front": {
+        "name": "Stone Barrage",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-109.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Stone Barrage",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-110": {
+    "id": "BEX-110",
+    "face": {
+      "front": {
+        "name": "Thunder Strike",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-110.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Thunder Strike",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-111": {
+    "id": "BEX-111",
+    "face": {
+      "front": {
+        "name": "Angel's Light",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-111.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Angel's Light",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-112": {
+    "id": "BEX-112",
+    "face": {
+      "front": {
+        "name": "Wrath",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-112.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Wrath",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "B-BEX-113": {
+    "id": "B-BEX-113",
+    "face": {
+      "front": {
+        "name": "Zap",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/B-BEX-113.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Zap",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "BEX-114": {
+    "id": "BEX-114",
+    "face": {
+      "front": {
+        "name": "Ambush",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-114.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Ambush",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-115": {
+    "id": "BEX-115",
+    "face": {
+      "front": {
+        "name": "Assault",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-115.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Assault",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-116": {
+    "id": "BEX-116",
+    "face": {
+      "front": {
+        "name": "Command Power",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-116.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Command Power",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-117": {
+    "id": "BEX-117",
+    "face": {
+      "front": {
+        "name": "Dark Bond",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-117.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Dark Bond",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-118": {
+    "id": "BEX-118",
+    "face": {
+      "front": {
+        "name": "Doppelganger",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-118.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Doppelganger",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-119": {
+    "id": "BEX-119",
+    "face": {
+      "front": {
+        "name": "Dual Strike",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-119.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Dual Strike",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-120": {
+    "id": "BEX-120",
+    "face": {
+      "front": {
+        "name": "Edge of Anger",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-120.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Edge of Anger",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-121": {
+    "id": "BEX-121",
+    "face": {
+      "front": {
+        "name": "Shield Throw",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-121.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Shield Throw",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-122": {
+    "id": "BEX-122",
+    "face": {
+      "front": {
+        "name": "Phaseblade",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-122.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Phaseblade",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-123": {
+    "id": "BEX-123",
+    "face": {
+      "front": {
+        "name": "Mindseeker Blade",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-123.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Mindseeker Blade",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-124": {
+    "id": "BEX-124",
+    "face": {
+      "front": {
+        "name": "Roundhouse",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-124.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Roundhouse",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-125": {
+    "id": "BEX-125",
+    "face": {
+      "front": {
+        "name": "Ninja Tabi",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-125.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Ninja Tabi",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-126": {
+    "id": "BEX-126",
+    "face": {
+      "front": {
+        "name": "Soul on Fire",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-126.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Soul on Fire",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-127": {
+    "id": "BEX-127",
+    "face": {
+      "front": {
+        "name": "Powerslash",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-127.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Powerslash",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-128": {
+    "id": "BEX-128",
+    "face": {
+      "front": {
+        "name": "Intimidate",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-128.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Intimidate",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-129": {
+    "id": "BEX-129",
+    "face": {
+      "front": {
+        "name": "Surge",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-129.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Surge",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-130": {
+    "id": "BEX-130",
+    "face": {
+      "front": {
+        "name": "Final Seal",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-130.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Final Seal",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-131": {
+    "id": "BEX-131",
+    "face": {
+      "front": {
+        "name": "Thieve's Door",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-131.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Thieve's Door",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus"
+  },
+  "BEX-132": {
+    "id": "BEX-132",
+    "face": {
+      "front": {
+        "name": "Swift Gauntlet",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-132.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Swift Gauntlet",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-133": {
+    "id": "BEX-133",
+    "face": {
+      "front": {
+        "name": "Arcane Wardstones",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-133.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Arcane Wardstones",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-134": {
+    "id": "BEX-134",
+    "face": {
+      "front": {
+        "name": "Shackles of Pain",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-134.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Shackles of Pain",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-135": {
+    "id": "BEX-135",
+    "face": {
+      "front": {
+        "name": "Skyfallen Scroll",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-135.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Skyfallen Scroll",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-136": {
+    "id": "BEX-136",
+    "face": {
+      "front": {
+        "name": "Odd Shackles",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-136.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Odd Shackles",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-137": {
+    "id": "BEX-137",
+    "face": {
+      "front": {
+        "name": "Cybersoul Axe",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-137.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Cybersoul Axe",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-138": {
+    "id": "BEX-138",
+    "face": {
+      "front": {
+        "name": "Golden Buckler",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-138.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Golden Buckler",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-139": {
+    "id": "BEX-139",
+    "face": {
+      "front": {
+        "name": "Thieves Daggers",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-139.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Thieves Daggers",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-140": {
+    "id": "BEX-140",
+    "face": {
+      "front": {
+        "name": "Golden Lute",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-140.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Golden Lute",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-141": {
+    "id": "BEX-141",
+    "face": {
+      "front": {
+        "name": "Adventurer Armor",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-141.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Adventurer Armor",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-142": {
+    "id": "BEX-142",
+    "face": {
+      "front": {
+        "name": "Warrior's Kilt",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-142.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Warrior's Kilt",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-143": {
+    "id": "BEX-143",
+    "face": {
+      "front": {
+        "name": "Junk Armor",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-143.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Junk Armor",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-144": {
+    "id": "BEX-144",
+    "face": {
+      "front": {
+        "name": "Tome of Insight",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-144.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Tome of Insight",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-145": {
+    "id": "BEX-145",
+    "face": {
+      "front": {
+        "name": "Amberstone Ring",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-145.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Amberstone Ring",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-146": {
+    "id": "BEX-146",
+    "face": {
+      "front": {
+        "name": "Spirit Stone",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-146.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Spirit Stone",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-147": {
+    "id": "BEX-147",
+    "face": {
+      "front": {
+        "name": "Zina's Hairpin",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-147.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Zina's Hairpin",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-148": {
+    "id": "BEX-148",
+    "face": {
+      "front": {
+        "name": "Battle Standard",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-148.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Battle Standard",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-149": {
+    "id": "BEX-149",
+    "face": {
+      "front": {
+        "name": "Dissolver",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-149.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Dissolver",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-150": {
+    "id": "BEX-150",
+    "face": {
+      "front": {
+        "name": "Dark Pearl",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-150.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Dark Pearl",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-151": {
+    "id": "BEX-151",
+    "face": {
+      "front": {
+        "name": "Wind Bomb",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-151.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Wind Bomb",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-152": {
+    "id": "BEX-152",
+    "face": {
+      "front": {
+        "name": "Frozen Feather",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-152.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Frozen Feather",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-153": {
+    "id": "BEX-153",
+    "face": {
+      "front": {
+        "name": "Hexing Idol",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-153.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Hexing Idol",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-154": {
+    "id": "BEX-154",
+    "face": {
+      "front": {
+        "name": "Slimebuff",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-154.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Slimebuff",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-155": {
+    "id": "BEX-155",
+    "face": {
+      "front": {
+        "name": "Ghost Slime",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-155.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Ghost Slime",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-156": {
+    "id": "BEX-156",
+    "face": {
+      "front": {
+        "name": "Potion",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-156.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Potion",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-157": {
+    "id": "BEX-157",
+    "face": {
+      "front": {
+        "name": "Howling Seedpod",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-157.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Howling Seedpod",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-158": {
+    "id": "BEX-158",
+    "face": {
+      "front": {
+        "name": "Old Chest",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-158.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Old Chest",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus"
+  },
+  "BEX-159": {
+    "id": "BEX-159",
+    "face": {
+      "front": {
+        "name": "Cursed Seal",
+        "type": "Ability",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-159.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Cursed Seal",
+    "type": "Ability",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus"
+  },
+  "BEX-INF": {
+    "id": "BEX-INF",
+    "face": {
+      "front": {
+        "name": "Virali, Infinite Explorer",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-INF.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Virali, Infinite Explorer",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus"
+  },
+  "A-BEX-004": {
+    "id": "A-BEX-004",
+    "face": {
+      "front": {
+        "name": "Lepo, Soul Shifter",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/A-BEX-004.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Lepo, Soul Shifter",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "Brave Exodus REVISED - Box Topper"
+  },
+  "A-BEX-016": {
+    "id": "A-BEX-016",
+    "face": {
+      "front": {
+        "name": "Diana, Twinblade",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/A-BEX-016.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Diana, Twinblade",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus REVISED - Box Topper"
+  },
+  "H-BEX-020": {
+    "id": "H-BEX-020",
+    "face": {
+      "front": {
+        "name": "Jess, Ghost Blade",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/H-BEX-020.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Jess, Ghost Blade",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "Brave Exodus REVISED - Box Topper"
+  },
+  "V-BEX-024": {
+    "id": "V-BEX-024",
+    "face": {
+      "front": {
+        "name": "Edict, Young Wizard",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/V-BEX-024.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Edict, Young Wizard",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus REVISED - Alt Art"
+  },
+  "E-BEX-026": {
+    "id": "E-BEX-026",
+    "face": {
+      "front": {
+        "name": "Vexus, Voidheart",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/E-BEX-026.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Vexus, Voidheart",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "2026 Tournament Promo"
+  },
+  "E-BEX-035": {
+    "id": "E-BEX-035",
+    "face": {
+      "front": {
+        "name": "Trinity, The Absolver",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/E-BEX-035.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Trinity, The Absolver",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Divine",
+    "set": "2026 Tournament Promo"
+  },
+  "E-BEX-042": {
+    "id": "E-BEX-042",
+    "face": {
+      "front": {
+        "name": "Ying, Ghostblade",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/E-BEX-042.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Ying, Ghostblade",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Warrior",
+    "set": "2026 Tournament Promo"
+  },
+  "A-BEX-051": {
+    "id": "A-BEX-051",
+    "face": {
+      "front": {
+        "name": "Grundle, Earthshaker",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/A-BEX-051.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Grundle, Earthshaker",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "Brave Exodus REVISED - Box Topper"
+  },
+  "E-BEX-055": {
+    "id": "E-BEX-055",
+    "face": {
+      "front": {
+        "name": "Trent, The Ageless",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/E-BEX-055.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Trent, The Ageless",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Augmentor",
+    "set": "2026 Tournament Promo"
+  },
+  "H-BEX-144": {
+    "id": "H-BEX-144",
+    "face": {
+      "front": {
+        "name": "Tome of Insight",
+        "type": "Equipment",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/H-BEX-144.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Tome of Insight",
+    "type": "Equipment",
+    "cost": 0,
+    "set": "Brave Exodus REVISED - Alt Art"
+  },
+  "BEX-149-ALT": {
+    "id": "BEX-149-ALT",
+    "face": {
+      "front": {
+        "name": "Dissolver",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-149-ALT.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Dissolver",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus - Alt Art"
+  },
+  "E-BEX-150": {
+    "id": "E-BEX-150",
+    "face": {
+      "front": {
+        "name": "Dark Pearl",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/E-BEX-150.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Dark Pearl",
+    "type": "Item",
+    "cost": 0,
+    "set": "2026 Tournament Promo"
+  },
+  "V-BEX-156": {
+    "id": "V-BEX-156",
+    "face": {
+      "front": {
+        "name": "Potion",
+        "type": "Item",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/V-BEX-156.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Potion",
+    "type": "Item",
+    "cost": 0,
+    "set": "Brave Exodus - Alt Art"
+  },
+  "BEX-INF-BT": {
+    "id": "BEX-INF-BT",
+    "face": {
+      "front": {
+        "name": "Virali, Infinite Explorer",
+        "type": "Adventurer",
+        "cost": 0,
+        "image": "https://valcur.github.io/TCG-Arena-Journey/Images/Cards/BEX-INF-BT.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "Virali, Infinite Explorer",
+    "type": "Adventurer",
+    "cost": 0,
+    "faction": "Mage",
+    "set": "Brave Exodus 1st Edition - Box Topper"
+  }
+}
