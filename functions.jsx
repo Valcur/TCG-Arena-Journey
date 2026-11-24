@@ -11,6 +11,11 @@ function myPosition() {
     return game.turn.orderPosition ?? 0
 }
 
+/** Clé d'un Adventurer dans Order.active : "position-emplacement" (emplacement 0 à 2) */
+function heroKey(position, slot) {
+    return `${position}-${slot}`
+}
+
 /** "Hyla, Bog Lurker" → "Hyla" */
 function shortName(name) {
     return String(name ?? "").split(",")[0].trim()
@@ -21,25 +26,29 @@ function toNumber(value) {
     return Number.isFinite(n) ? n : 0
 }
 
+function isSet(value) {
+    return value !== null && value !== undefined
+}
+
 // ─────────────────────────────── Initialisation ───────────────────────────────
 
 /**
  * Répartit les 3 Adventurers posés en Hero1 sur Hero1, Hero2 et Hero3 et remplit le bloc Stats du joueur
- * (nom, PV, Agility, Step Back). L'hôte tire aussi le joueur qui a la priorité sur les égalités au premier tour.
+ * (nom, PV, Agility, Step Back, action faite). L'hôte tire aussi le joueur qui a la priorité au premier tour.
  */
 async function ini() {
     const adventurers = [...(cards?.Hero1 ?? [])].slice(0, HERO_SECTIONS.length)
-    log("ini : position", myPosition(), "/ hôte", game.isHost, "/", adventurers.length, "Adventurer(s) en Hero1")
+    log("ini: position", myPosition(), "/ host", game.isHost, "/", adventurers.length, "Adventurer(s) in Hero1")
 
-    if (game.isHost && (game.data.Order.priorityStart === null || game.data.Order.priorityStart === undefined)) {
+    if (game.isHost && !isSet(game.data.Order.priorityStart)) {
         game.data.Order.priorityStart = Math.floor(Math.random() * Math.max(1, game.turn.totalPlayers))
-        log("ini : joueur tiré pour la priorité de départ", game.data.Order.priorityStart)
+        log("ini: random starting priority player", game.data.Order.priorityStart)
     }
 
     if (adventurers.length === 0) return
 
     for (let i = 1; i < adventurers.length; i++) {
-        log("ini : déplacement vers", HERO_SECTIONS[i])
+        log("ini: moving to", HERO_SECTIONS[i])
         await functions.moveCard(adventurers[i], HERO_SECTIONS[i])
     }
 
@@ -51,7 +60,8 @@ async function ini() {
         game.data.Stats["hp" + n] = toNumber(data?.hp)
         game.data.Stats["agi" + n] = toNumber(data?.agility)
         game.data.Stats["step" + n] = false
-        log(`ini : Adventurer ${n} = ${game.data.Stats["name" + n]}, PV ${game.data.Stats["hp" + n]}, Agility ${game.data.Stats["agi" + n]}`)
+        game.data.Stats["done" + n] = false
+        log(`ini: Adventurer ${n} = ${game.data.Stats["name" + n]}, HP ${game.data.Stats["hp" + n]}, Agility ${game.data.Stats["agi" + n]}`)
     })
 
     await functions.repositionCards()
@@ -62,99 +72,125 @@ async function ini() {
 /** PV de l'Adventurer n° index (1 à 3) */
 function setHp(index, value) {
     game.data.Stats["hp" + index] = toNumber(value)
-    log(`setHp : Adventurer ${index} → ${game.data.Stats["hp" + index]} PV`)
+    log(`setHp: Adventurer ${index} -> ${game.data.Stats["hp" + index]} HP`)
 }
 
 /** Agility totale de l'Adventurer n° index (1 à 3) */
 function setAgi(index, value) {
     game.data.Stats["agi" + index] = toNumber(value)
-    log(`setAgi : Adventurer ${index} → Agility ${game.data.Stats["agi" + index]}`)
+    log(`setAgi: Adventurer ${index} -> Agility ${game.data.Stats["agi" + index]}`)
 }
 
 /** Step Back de l'Adventurer n° index (1 à 3) : une seule fois par tour */
 function stepBack(index) {
     if (game.data.Stats["step" + index]) {
-        log(`stepBack : Adventurer ${index} a déjà fait son Step Back ce tour`)
+        log(`stepBack: Adventurer ${index} already stepped back this turn`)
         return
     }
     game.data.Stats["step" + index] = true
-    log(`stepBack : Adventurer ${index} (${game.data.Stats["name" + index]})`)
+    log(`stepBack: Adventurer ${index} (${game.data.Stats["name" + index]})`)
 }
 
-/** Nouveau tour : chaque joueur récupère ses Step Back ; l'hôte passe la priorité au joueur suivant */
-function newTurn() {
-    log("newTurn : tour", game.turn.count, "/ mon tour", game.turn.isMyTurn)
-    for (const n of HERO_INDEXES) {
-        if (game.data.Stats["step" + n]) {
-            game.data.Stats["step" + n] = false
-            log(`newTurn : Step Back de l'Adventurer ${n} remis à disposition`)
+/** Pass : marque comme ayant agi tous les Adventurers du joueur dont c'est actuellement le tour */
+function pass() {
+    const active = game.data.Order.active ?? []
+    const passed = []
+    HERO_INDEXES.forEach((n, slot) => {
+        if (active.includes(heroKey(myPosition(), slot)) && !game.data.Stats["done" + n]) {
+            game.data.Stats["done" + n] = true
+            passed.push(game.data.Stats["name" + n])
         }
+    })
+    log("pass:", passed.length ? passed.join(", ") : "no Adventurer of mine was active", "/ active:", active)
+}
+
+/** Nouveau tour : chaque joueur récupère ses Step Back et ses actions ; l'hôte passe la priorité au joueur suivant */
+function newTurn() {
+    log("newTurn: turn", game.turn.count, "/ my turn", game.turn.isMyTurn)
+    for (const n of HERO_INDEXES) {
+        if (game.data.Stats["step" + n]) game.data.Stats["step" + n] = false
+        if (game.data.Stats["done" + n]) game.data.Stats["done" + n] = false
     }
     if (game.isHost) rebuildOrder()
 }
 
 // ─────────────────────────────── Hôte : bloc partagé Order ───────────────────────────────
 
-/** onUpdate du bloc Stats : l'hôte reporte ses propres stats dans Order */
+/** onUpdate du bloc Stats : l'hôte reporte ses propres stats et son pseudo dans Order */
 function onMyStatsUpdate() {
     if (!game.isHost) return
-    log("onMyStatsUpdate : stats de l'hôte modifiées")
-    storeStats({ ...game.data.Stats, position: myPosition() })
+    log("onMyStatsUpdate: host stats changed")
+    storeStats({ ...game.data.Stats, position: myPosition() }, game.data.pseudo)
 }
 
-/** onOpponentUpdate du bloc Stats : l'hôte reporte les stats de l'adversaire dans Order */
-function onOpponentStats(data) {
+/** onOpponentUpdate du bloc Stats : l'hôte reporte les stats et le pseudo de l'adversaire dans Order */
+function onOpponentStats(opponentData) {
     if (!game.isHost) return
-    const stats = data?.Stats ?? data
-    if (stats?.position === null || stats?.position === undefined) {
-        log("onOpponentStats : données reçues sans position, ignorées", data)
+    const stats = opponentData?.Stats
+    if (!isSet(stats?.position)) {
+        log("onOpponentStats: data without position, ignored", opponentData)
         return
     }
-    log("onOpponentStats : stats du joueur en position", stats.position)
-    storeStats(stats)
+    log("onOpponentStats: player at position", stats.position, "/ pseudo", opponentData?.pseudo)
+    storeStats(stats, opponentData?.pseudo)
 }
 
-/** Enregistre les Adventurers d'un joueur (nom, Agility, Step Back) dans Order et recalcule l'ordre */
-function storeStats(stats) {
+/** Enregistre les Adventurers d'un joueur (nom, Agility, Step Back, action faite) et son pseudo dans Order, puis recalcule l'ordre */
+function storeStats(stats, pseudo) {
+    const previous = game.data.Order.players?.[stats.position]
     const entry = {
         position: stats.position,
+        pseudo: pseudo || previous?.pseudo || "",
         heroes: HERO_INDEXES.map(n => ({
             name: stats["name" + n] ?? "",
             agi: toNumber(stats["agi" + n]),
             step: !!stats["step" + n],
-        })).filter(h => h.name),
+            done: !!stats["done" + n],
+        })),
     }
     game.data.Order.players = { ...(game.data.Order.players ?? {}), [entry.position]: entry }
-    log("storeStats : position", entry.position, entry.heroes)
+    log("storeStats: position", entry.position, "/ pseudo", entry.pseudo, entry.heroes)
     rebuildOrder()
 }
 
 /**
- * Liste affichée dans la barre : tous les Adventurers de tous les joueurs, hors Step Back d'abord, puis par Agility
- * décroissante. sep = séparateur affiché avant l'élément ("›" Agility différente, "=" égalité, "" pour le premier).
- * Priorité sur les égalités : joueur tiré au premier tour, puis le joueur suivant à chaque nouveau tour.
+ * Recalcule l'affichage de la barre et les Adventurers dont c'est le tour.
+ * - list : tous les Adventurers de tous les joueurs, hors Step Back d'abord, puis par Agility décroissante.
+ *   sep = séparateur affiché avant l'élément ("›" Agility différente, "=" égalité, "" pour le premier).
+ * - active : clés "position-emplacement" des Adventurers qui n'ont pas encore agi et qui partagent la meilleure
+ *   place restante (même groupe Step Back, même Agility). Le groupe suivant devient actif quand tous ont passé.
+ * - priority : joueur tiré au premier tour, puis le joueur suivant à chaque nouveau tour.
  */
 function rebuildOrder() {
     const players = Object.values(game.data.Order.players ?? {})
-        .filter(p => p && p.position !== null && p.position !== undefined)
+        .filter(p => p && isSet(p.position))
         .sort((a, b) => a.position - b.position)
 
     const heroes = []
     for (const p of players) {
-        p.heroes.forEach((h, slot) => heroes.push({ ...h, position: p.position, slot }))
+        p.heroes.forEach((h, slot) => {
+            if (h.name) heroes.push({ ...h, position: p.position, slot })
+        })
     }
     heroes.sort((a, b) => (a.step - b.step) || (b.agi - a.agi) || (a.position - b.position) || (a.slot - b.slot))
 
     game.data.Order.list = heroes.map((h, i) => {
         const prev = heroes[i - 1]
-        const tie = prev && !prev.step && !h.step && prev.agi === h.agi
-        return { name: h.name, position: h.position, step: h.step, sep: i === 0 ? "" : tie ? "=" : "›" }
+        const tie = prev && prev.step === h.step && prev.agi === h.agi
+        return { name: h.name, position: h.position, slot: h.slot, step: h.step, done: h.done, sep: i === 0 ? "" : tie ? "=" : "›" }
     })
 
+    const remaining = heroes.filter(h => !h.done)
+    const first = remaining[0]
+    game.data.Order.active = first
+        ? remaining.filter(h => h.step === first.step && h.agi === first.agi).map(h => heroKey(h.position, h.slot))
+        : []
+
     const total = Math.max(1, game.turn.totalPlayers)
-    if (game.data.Order.priorityStart !== null && game.data.Order.priorityStart !== undefined) {
+    if (isSet(game.data.Order.priorityStart)) {
         game.data.Order.priority = (toNumber(game.data.Order.priorityStart) + toNumber(game.turn.count)) % total
     }
 
-    log("rebuildOrder :", game.data.Order.list.map(h => h.sep + h.name).join(" "), "| priorité : position", game.data.Order.priority)
+    log("rebuildOrder:", game.data.Order.list.map(h => h.sep + h.name + (h.done ? "(done)" : "")).join(" "),
+        "| active:", game.data.Order.active, "| priority: position", game.data.Order.priority)
 }
