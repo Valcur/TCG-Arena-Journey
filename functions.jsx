@@ -104,28 +104,28 @@ function pass() {
     log("pass:", passed.length ? passed.join(", ") : "no Adventurer of mine was active", "/ active:", active)
 }
 
-/** Nouveau tour : chaque joueur récupère ses Step Back et ses actions ; l'hôte passe la priorité au joueur suivant */
+/** Nouveau tour : chaque joueur récupère ses Step Back et ses actions, et la priorité passe au joueur suivant */
 function newTurn() {
     log("newTurn: turn", game.turn.count, "/ my turn", game.turn.isMyTurn)
     for (const n of HERO_INDEXES) {
         if (game.data.Stats["step" + n]) game.data.Stats["step" + n] = false
         if (game.data.Stats["done" + n]) game.data.Stats["done" + n] = false
     }
-    if (game.isHost) rebuildOrder()
+    rebuildOrder()
 }
 
-// ─────────────────────────────── Hôte : bloc partagé Order ───────────────────────────────
+// ─────────────────────────────── Bloc partagé Order ───────────────────────────────
+// Tous les joueurs recalculent Order : chez l'hôte la mise à jour est diffusée à tous, chez les autres elle reste
+// locale (affichage immédiat) jusqu'à ce que la version de l'hôte arrive.
 
-/** onUpdate du bloc Stats : l'hôte reporte ses propres stats et son pseudo dans Order */
+/** onUpdate du bloc Stats : reporte ses propres stats et son pseudo dans Order */
 function onMyStatsUpdate() {
-    if (!game.isHost) return
-    log("onMyStatsUpdate: host stats changed")
-    storeStats({ ...game.data.Stats, position: myPosition() }, game.data.pseudo)
+    log("onMyStatsUpdate: my stats changed / host", game.isHost)
+    storeStats({ ...game.data.Stats, position: myPosition() }, game.pseudo)
 }
 
-/** onOpponentUpdate du bloc Stats : l'hôte reporte les stats et le pseudo de l'adversaire dans Order */
+/** onOpponentUpdate du bloc Stats : reporte les stats et le pseudo de l'adversaire dans Order */
 function onOpponentStats(opponentData) {
-    if (!game.isHost) return
     const stats = opponentData?.Stats
     if (!isSet(stats?.position)) {
         log("onOpponentStats: data without position, ignored", opponentData)
