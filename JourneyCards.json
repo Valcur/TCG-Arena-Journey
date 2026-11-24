@@ -14,7 +14,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Valiant",
     "hp": 10,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-002": {
@@ -32,7 +35,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Advanced",
     "hp": 12,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-003": {
@@ -50,7 +56,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Heroic",
     "hp": 11,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-004": {
@@ -68,7 +77,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Advanced",
     "hp": 13,
+    "agility": 7,
     "set": "Brave Exodus"
   },
   "BEX-005": {
@@ -86,7 +98,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Advanced",
     "hp": 11,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-006": {
@@ -104,7 +119,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Basic",
     "hp": 10,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-007": {
@@ -122,7 +140,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Valiant",
     "hp": 12,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-008": {
@@ -140,7 +161,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Advanced",
     "hp": 11,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-009": {
@@ -158,7 +182,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Advanced",
     "hp": 12,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-010": {
@@ -176,7 +203,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Valiant",
     "hp": 11,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-011": {
@@ -194,7 +224,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Valiant",
     "hp": 10,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-012": {
@@ -212,7 +245,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Basic",
     "hp": 12,
+    "agility": 7,
     "set": "Brave Exodus"
   },
   "BEX-013": {
@@ -230,7 +266,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Heroic",
     "hp": 10,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-014": {
@@ -248,7 +287,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Advanced",
     "hp": 10,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-015": {
@@ -266,7 +308,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Basic",
     "hp": 11,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-016": {
@@ -284,7 +329,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Advanced",
     "hp": 14,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-017": {
@@ -302,7 +350,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Advanced",
     "hp": 13,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-018": {
@@ -320,7 +371,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Advanced",
     "hp": 14,
+    "agility": 3,
     "set": "Brave Exodus"
   },
   "BEX-019": {
@@ -338,7 +392,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Valiant",
     "hp": 14,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-020": {
@@ -356,7 +413,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Heroic",
     "hp": 12,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-021": {
@@ -374,7 +434,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Basic",
     "hp": 12,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-022": {
@@ -392,7 +455,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Advanced",
     "hp": 12,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-023": {
@@ -410,7 +476,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Basic",
     "hp": 12,
+    "agility": 3,
     "set": "Brave Exodus"
   },
   "BEX-024": {
@@ -428,7 +497,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Valiant",
     "hp": 12,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-025": {
@@ -446,7 +518,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Basic",
     "hp": 12,
+    "agility": 3,
     "set": "Brave Exodus"
   },
   "BEX-026": {
@@ -464,7 +539,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Advanced",
     "hp": 13,
+    "agility": 2,
     "set": "Brave Exodus"
   },
   "BEX-027": {
@@ -482,7 +560,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Basic",
     "hp": 15,
+    "agility": 3,
     "set": "Brave Exodus"
   },
   "BEX-028": {
@@ -500,7 +581,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Heroic",
     "hp": 14,
+    "agility": 3,
     "set": "Brave Exodus"
   },
   "BEX-029": {
@@ -518,7 +602,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Valiant",
     "hp": 10,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-030": {
@@ -536,7 +623,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Valiant",
     "hp": 11,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-031": {
@@ -554,7 +644,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Basic",
     "hp": 10,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-032": {
@@ -572,7 +665,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Basic",
     "hp": 10,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-033": {
@@ -590,7 +686,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Advanced",
     "hp": 10,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-034": {
@@ -608,7 +707,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Heroic",
     "hp": 10,
+    "agility": 7,
     "set": "Brave Exodus"
   },
   "BEX-035": {
@@ -626,7 +728,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Advanced",
     "hp": 12,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-036": {
@@ -644,7 +749,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Basic",
     "hp": 11,
+    "agility": 7,
     "set": "Brave Exodus"
   },
   "BEX-037": {
@@ -662,7 +770,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Valiant",
     "hp": 11,
+    "agility": 7,
     "set": "Brave Exodus"
   },
   "BEX-038": {
@@ -680,7 +791,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Advanced",
     "hp": 10,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-039": {
@@ -698,7 +812,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Advanced",
     "hp": 13,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-040": {
@@ -716,7 +833,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Basic",
     "hp": 14,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-041": {
@@ -734,7 +854,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Advanced",
     "hp": 12,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-042": {
@@ -752,7 +875,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Heroic",
     "hp": 11,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-043": {
@@ -770,7 +896,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Advanced",
     "hp": 12,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "A-BEX-044": {
@@ -788,7 +917,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Advanced",
     "hp": 13,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-045": {
@@ -806,7 +938,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Advanced",
     "hp": 14,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-046": {
@@ -824,7 +959,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Valiant",
     "hp": 12,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-047": {
@@ -842,7 +980,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Basic",
     "hp": 14,
+    "agility": 2,
     "set": "Brave Exodus"
   },
   "BEX-048": {
@@ -860,7 +1001,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Heroic",
     "hp": 13,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-049": {
@@ -878,7 +1022,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Basic",
     "hp": 12,
+    "agility": 7,
     "set": "Brave Exodus"
   },
   "BEX-050": {
@@ -896,7 +1043,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Basic",
     "hp": 11,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-051": {
@@ -914,7 +1064,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Advanced",
     "hp": 11,
+    "agility": 4,
     "set": "Brave Exodus"
   },
   "BEX-052": {
@@ -932,7 +1085,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Basic",
     "hp": 10,
+    "agility": 6,
     "set": "Brave Exodus"
   },
   "BEX-053": {
@@ -950,7 +1106,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Advanced",
     "hp": 10,
+    "agility": 9,
     "set": "Brave Exodus"
   },
   "BEX-054": {
@@ -968,7 +1127,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Valiant",
     "hp": 10,
+    "agility": 7,
     "set": "Brave Exodus"
   },
   "BEX-055": {
@@ -986,7 +1148,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Heroic",
     "hp": 12,
+    "agility": 1,
     "set": "Brave Exodus"
   },
   "BEX-056": {
@@ -1004,7 +1169,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Advanced",
     "hp": 10,
+    "agility": 5,
     "set": "Brave Exodus"
   },
   "BEX-057": {
@@ -1022,6 +1190,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-058": {
@@ -1039,6 +1208,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-059": {
@@ -1056,6 +1227,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-060": {
@@ -1073,6 +1246,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-061": {
@@ -1090,6 +1264,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-062": {
@@ -1107,6 +1283,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-063": {
@@ -1124,6 +1302,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-064": {
@@ -1141,6 +1320,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-065": {
@@ -1158,6 +1339,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "A-BEX-066": {
@@ -1175,6 +1358,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-067": {
@@ -1192,6 +1377,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-068": {
@@ -1209,6 +1395,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "A-BEX-069": {
@@ -1226,6 +1413,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-070": {
@@ -1243,6 +1432,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "B-BEX-071": {
@@ -1260,6 +1451,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-072": {
@@ -1277,6 +1470,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-073": {
@@ -1294,6 +1489,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "B-BEX-074": {
@@ -1311,6 +1508,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-075": {
@@ -1328,6 +1527,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-076": {
@@ -1345,6 +1546,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-077": {
@@ -1362,6 +1565,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "B-BEX-078": {
@@ -1379,6 +1584,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-079": {
@@ -1396,6 +1602,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "B-BEX-080": {
@@ -1413,6 +1621,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Bard",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-081": {
@@ -1430,6 +1640,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-082": {
@@ -1447,6 +1658,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-083": {
@@ -1464,6 +1677,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-084": {
@@ -1481,6 +1696,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "A-BEX-085": {
@@ -1498,6 +1715,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-086": {
@@ -1515,6 +1733,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-087": {
@@ -1532,6 +1752,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-088": {
@@ -1549,6 +1771,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-089": {
@@ -1566,6 +1789,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-090": {
@@ -1583,6 +1807,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-091": {
@@ -1600,6 +1826,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "V-BEX-092": {
@@ -1617,6 +1845,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-093": {
@@ -1634,6 +1864,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-094": {
@@ -1651,6 +1882,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-095": {
@@ -1668,6 +1901,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-096": {
@@ -1685,6 +1920,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "V-BEX-097": {
@@ -1702,6 +1939,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-098": {
@@ -1719,6 +1958,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-099": {
@@ -1736,6 +1977,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-100": {
@@ -1753,6 +1996,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-101": {
@@ -1770,6 +2015,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "H-BEX-102": {
@@ -1787,6 +2034,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-103": {
@@ -1804,6 +2053,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-104": {
@@ -1821,6 +2071,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-105": {
@@ -1838,6 +2089,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-106": {
@@ -1855,6 +2108,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-107": {
@@ -1872,6 +2126,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-108": {
@@ -1889,6 +2145,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-109": {
@@ -1906,6 +2164,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-110": {
@@ -1923,6 +2183,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-111": {
@@ -1940,6 +2202,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-112": {
@@ -1957,6 +2221,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "B-BEX-113": {
@@ -1974,6 +2240,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Mage",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-114": {
@@ -1991,6 +2258,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-115": {
@@ -2008,6 +2277,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-116": {
@@ -2025,6 +2296,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-117": {
@@ -2042,6 +2315,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-118": {
@@ -2059,6 +2334,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-119": {
@@ -2076,6 +2353,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-120": {
@@ -2093,6 +2372,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-121": {
@@ -2110,6 +2390,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-122": {
@@ -2127,6 +2409,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-123": {
@@ -2143,6 +2426,9 @@
     "name": "Mindseeker Blade",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Berserker",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-124": {
@@ -2160,6 +2446,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-125": {
@@ -2176,6 +2464,9 @@
     "name": "Ninja Tabi",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Rogue",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-126": {
@@ -2193,6 +2484,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-127": {
@@ -2210,6 +2503,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-128": {
@@ -2227,6 +2521,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-129": {
@@ -2244,6 +2539,7 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-130": {
@@ -2261,6 +2557,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-131": {
@@ -2278,6 +2576,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-132": {
@@ -2294,6 +2594,8 @@
     "name": "Swift Gauntlet",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-133": {
@@ -2310,6 +2612,8 @@
     "name": "Arcane Wardstones",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-134": {
@@ -2326,6 +2630,9 @@
     "name": "Shackles of Pain",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Berserker",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-135": {
@@ -2342,6 +2649,9 @@
     "name": "Skyfallen Scroll",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Ascendant",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-136": {
@@ -2358,6 +2668,9 @@
     "name": "Odd Shackles",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Strategist",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-137": {
@@ -2374,6 +2687,9 @@
     "name": "Cybersoul Axe",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Strategist",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-138": {
@@ -2390,6 +2706,9 @@
     "name": "Golden Buckler",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Ascendant",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-139": {
@@ -2406,6 +2725,9 @@
     "name": "Thieves Daggers",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Rogue",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-140": {
@@ -2422,6 +2744,9 @@
     "name": "Golden Lute",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Bard",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-141": {
@@ -2438,6 +2763,8 @@
     "name": "Adventurer Armor",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-142": {
@@ -2454,6 +2781,8 @@
     "name": "Warrior's Kilt",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-143": {
@@ -2470,6 +2799,8 @@
     "name": "Junk Armor",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-144": {
@@ -2486,6 +2817,9 @@
     "name": "Tome of Insight",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Dark Mage",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-145": {
@@ -2502,6 +2836,8 @@
     "name": "Amberstone Ring",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-146": {
@@ -2518,6 +2854,9 @@
     "name": "Spirit Stone",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Exorcist",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-147": {
@@ -2534,6 +2873,9 @@
     "name": "Zina's Hairpin",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Spellweaver",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-148": {
@@ -2550,6 +2892,8 @@
     "name": "Battle Standard",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-149": {
@@ -2566,6 +2910,8 @@
     "name": "Dissolver",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-150": {
@@ -2582,6 +2928,8 @@
     "name": "Dark Pearl",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-151": {
@@ -2598,6 +2946,8 @@
     "name": "Wind Bomb",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-152": {
@@ -2614,6 +2964,8 @@
     "name": "Frozen Feather",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-153": {
@@ -2630,6 +2982,8 @@
     "name": "Hexing Idol",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-154": {
@@ -2646,6 +3000,8 @@
     "name": "Slimebuff",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-155": {
@@ -2662,6 +3018,8 @@
     "name": "Ghost Slime",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Basic",
     "set": "Brave Exodus"
   },
   "BEX-156": {
@@ -2678,6 +3036,8 @@
     "name": "Potion",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Valiant",
     "set": "Brave Exodus"
   },
   "BEX-157": {
@@ -2694,6 +3054,8 @@
     "name": "Howling Seedpod",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Advanced",
     "set": "Brave Exodus"
   },
   "BEX-158": {
@@ -2710,6 +3072,8 @@
     "name": "Old Chest",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-159": {
@@ -2727,6 +3091,8 @@
     "type": "Ability",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Heroic",
     "set": "Brave Exodus"
   },
   "BEX-INF": {
@@ -2744,7 +3110,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Heroic",
     "hp": 14,
+    "agility": 7,
     "set": "Brave Exodus"
   },
   "A-BEX-004": {
@@ -2762,7 +3131,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Ascendant",
+    "rarity": "Advanced",
     "hp": 13,
+    "agility": 7,
     "set": "Brave Exodus REVISED - Box Topper"
   },
   "A-BEX-016": {
@@ -2780,7 +3152,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Advanced",
     "hp": 14,
+    "agility": 4,
     "set": "Brave Exodus REVISED - Box Topper"
   },
   "H-BEX-020": {
@@ -2798,7 +3173,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Berserker",
+    "rarity": "Heroic",
     "hp": 12,
+    "agility": 5,
     "set": "Brave Exodus REVISED - Box Topper"
   },
   "V-BEX-024": {
@@ -2816,7 +3194,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Valiant",
     "hp": 12,
+    "agility": 4,
     "set": "Brave Exodus REVISED - Alt Art"
   },
   "E-BEX-026": {
@@ -2834,7 +3215,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Dark Mage",
+    "rarity": "Advanced",
     "hp": 13,
+    "agility": 2,
     "set": "2026 Tournament Promo"
   },
   "E-BEX-035": {
@@ -2852,7 +3236,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Divine",
+    "class": "Exorcist",
+    "rarity": "Advanced",
     "hp": 12,
+    "agility": 6,
     "set": "2026 Tournament Promo"
   },
   "E-BEX-042": {
@@ -2870,7 +3257,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Warrior",
+    "class": "Rogue",
+    "rarity": "Heroic",
     "hp": 11,
+    "agility": 5,
     "set": "2026 Tournament Promo"
   },
   "A-BEX-051": {
@@ -2888,7 +3278,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Advanced",
     "hp": 11,
+    "agility": 4,
     "set": "Brave Exodus REVISED - Box Topper"
   },
   "E-BEX-055": {
@@ -2906,7 +3299,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Augmentor",
+    "class": "Strategist",
+    "rarity": "Heroic",
     "hp": 12,
+    "agility": 1,
     "set": "2026 Tournament Promo"
   },
   "H-BEX-144": {
@@ -2923,6 +3319,9 @@
     "name": "Tome of Insight",
     "type": "Equipment",
     "cost": 0,
+    "faction": "Neutral",
+    "class": "Dark Mage",
+    "rarity": "Heroic",
     "set": "Brave Exodus REVISED - Alt Art"
   },
   "BEX-149-ALT": {
@@ -2939,6 +3338,8 @@
     "name": "Dissolver",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Basic",
     "set": "Brave Exodus - Alt Art"
   },
   "E-BEX-150": {
@@ -2955,6 +3356,8 @@
     "name": "Dark Pearl",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Valiant",
     "set": "2026 Tournament Promo"
   },
   "V-BEX-156": {
@@ -2971,6 +3374,8 @@
     "name": "Potion",
     "type": "Item",
     "cost": 0,
+    "faction": "Neutral",
+    "rarity": "Valiant",
     "set": "Brave Exodus - Alt Art"
   },
   "BEX-INF-BT": {
@@ -2988,7 +3393,10 @@
     "type": "Adventurer",
     "cost": 0,
     "faction": "Mage",
+    "class": "Spellweaver",
+    "rarity": "Heroic",
     "hp": 14,
+    "agility": 7,
     "set": "Brave Exodus 1st Edition - Box Topper"
   }
 }
