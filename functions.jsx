@@ -52,7 +52,6 @@ async function ini() {
         await functions.moveCard(adventurers[i], HERO_SECTIONS[i])
     }
 
-    game.data.Stats.playerId = adventurers[0].owner ?? null
     adventurers.forEach((card, i) => {
         const data = functions.getCardData(card)
         const n = i + 1
@@ -69,10 +68,15 @@ async function ini() {
 }
 
 /**
- * Recopie dans Stats la position et le pseudo du joueur dès qu'ils sont connus ou qu'ils changent : ils arrivent
- * parfois après onPlayersReady, et Stats est le seul bloc que les autres joueurs reçoivent.
+ * Recopie dans Stats l'identifiant, la position et le pseudo du joueur dès qu'ils sont connus ou qu'ils changent :
+ * ils arrivent parfois après onPlayersReady, et Stats est le seul bloc que les autres joueurs reçoivent.
  */
 function syncIdentity() {
+    const playerId = game.playerId
+    if (isSet(playerId) && game.data.Stats.playerId !== playerId) {
+        log("syncIdentity: playerId", game.data.Stats.playerId, "->", playerId)
+        game.data.Stats.playerId = playerId
+    }
     const position = myPosition()
     if (isSet(position) && game.data.Stats.position !== position) {
         log("syncIdentity: position", game.data.Stats.position, "->", position)
@@ -141,26 +145,26 @@ function newTurn() {
 /** onUpdate du bloc Stats : reporte ses propres stats dans Order */
 function onMyStatsUpdate() {
     log("onMyStatsUpdate: my stats changed / host", game.isHost)
-    storeStats(game.data.Stats)
+    storeStats(game.data.Stats, game.pseudo, game.playerId)
 }
 
 /** onOpponentUpdate du bloc Stats : reporte les stats de l'adversaire dans Order */
-function onOpponentStats(opponentData) {
-    const stats = opponentData?.Stats
-    log("onOpponentStats: player", stats?.playerId, "/ position", stats?.position, "/ pseudo", stats?.pseudo || opponentData?.pseudo)
-    storeStats(stats, opponentData?.pseudo)
+function onOpponentStats(opponentGame) {
+    const stats = opponentGame?.data?.Stats
+    log("onOpponentStats: player", stats?.playerId ?? opponentGame?.playerId, "/ position", stats?.position, "/ pseudo", stats?.pseudo || opponentGame?.pseudo)
+    storeStats(stats, opponentGame?.pseudo, opponentGame?.playerId)
 }
 
 /**
  * Enregistre les Adventurers d'un joueur dans Order, indexés par son identifiant (et non par sa position, qui peut
  * n'être connue qu'après coup), puis recalcule l'ordre. Ignoré tant que la position du joueur est inconnue.
  */
-function storeStats(stats, pseudoFallback) {
+function storeStats(stats, pseudoFallback, playerIdFallback) {
     if (!stats || !isSet(stats.position)) {
         log("storeStats: position unknown yet, ignored", stats)
         return
     }
-    const key = stats.playerId ?? `position-${stats.position}`
+    const key = stats.playerId ?? playerIdFallback ?? `position-${stats.position}`
     const previous = game.data.Order.players?.[key]
     const entry = {
         playerId: key,
