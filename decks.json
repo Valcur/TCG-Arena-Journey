@@ -1,0 +1,446 @@
+[
+    {
+      "title": "Rogue",
+      "id": "0cfe9f91-1eae-4046-88dd-2574e30f7966",
+      "cardCount": 23,
+      "createdAt": "2026-11-25T16:40:38.895Z",
+      "lastModifiedAt": "2026-11-25T16:40:46.463Z",
+      "game": "The Journey TCG",
+      "format": [
+        "Classic"
+      ],
+      "deckList": {
+        "categoriesOrder": [
+          "Adventurer",
+          "Ability",
+          "Equipment",
+          "Item"
+        ],
+        "Adventurer": [
+          {
+            "count": 1,
+            "id": "BEX-041"
+          },
+          {
+            "count": 1,
+            "id": "BEX-036"
+          },
+          {
+            "count": 1,
+            "id": "BEX-002"
+          }
+        ],
+        "Ability": [
+          {
+            "count": 2,
+            "id": "BEX-129"
+          },
+          {
+            "count": 2,
+            "id": "BEX-117"
+          },
+          {
+            "count": 2,
+            "id": "BEX-090"
+          },
+          {
+            "count": 1,
+            "id": "BEX-122"
+          },
+          {
+            "count": 1,
+            "id": "BEX-127"
+          },
+          {
+            "count": 1,
+            "id": "BEX-131"
+          },
+          {
+            "count": 1,
+            "id": "BEX-118"
+          },
+          {
+            "count": 1,
+            "id": "BEX-081"
+          },
+          {
+            "count": 1,
+            "id": "BEX-086"
+          }
+        ],
+        "Equipment": [
+          {
+            "count": 2,
+            "id": "BEX-139"
+          },
+          {
+            "count": 1,
+            "id": "BEX-142"
+          }
+        ],
+        "Item": [
+          {
+            "count": 1,
+            "id": "BEX-157"
+          },
+          {
+            "count": 1,
+            "id": "BEX-154"
+          },
+          {
+            "count": 1,
+            "id": "BEX-149"
+          },
+          {
+            "count": 1,
+            "id": "BEX-152"
+          },
+          {
+            "count": 1,
+            "id": "BEX-156"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Spellweaver",
+      "id": "4ecf8a07-eb8e-4c11-b27b-ca1110e2c28d",
+      "cardCount": 24,
+      "createdAt": "2026-11-25T16:41:56.132Z",
+      "lastModifiedAt": "2026-11-25T16:42:01.416Z",
+      "game": "The Journey TCG",
+      "format": [
+        "Classic"
+      ],
+      "deckList": {
+        "categoriesOrder": [
+          "Adventurer",
+          "Ability",
+          "Equipment",
+          "Item"
+        ],
+        "Adventurer": [
+          {
+            "count": 1,
+            "id": "BEX-INF"
+          },
+          {
+            "count": 1,
+            "id": "BEX-043"
+          },
+          {
+            "count": 1,
+            "id": "BEX-014"
+          }
+        ],
+        "Ability": [
+          {
+            "count": 2,
+            "id": "BEX-095"
+          },
+          {
+            "count": 2,
+            "id": "A-BEX-069"
+          },
+          {
+            "count": 1,
+            "id": "BEX-098"
+          },
+          {
+            "count": 1,
+            "id": "BEX-108"
+          },
+          {
+            "count": 1,
+            "id": "BEX-105"
+          },
+          {
+            "count": 1,
+            "id": "BEX-103"
+          },
+          {
+            "count": 1,
+            "id": "BEX-107"
+          },
+          {
+            "count": 1,
+            "id": "B-BEX-113"
+          },
+          {
+            "count": 1,
+            "id": "BEX-104"
+          },
+          {
+            "count": 1,
+            "id": "BEX-067"
+          },
+          {
+            "count": 1,
+            "id": "BEX-057"
+          },
+          {
+            "count": 1,
+            "id": "BEX-068"
+          },
+          {
+            "count": 1,
+            "id": "BEX-063"
+          }
+        ],
+        "Equipment": [
+          {
+            "count": 1,
+            "id": "BEX-133"
+          },
+          {
+            "count": 1,
+            "id": "BEX-142"
+          },
+          {
+            "count": 1,
+            "id": "BEX-140"
+          }
+        ],
+        "Item": [
+          {
+            "count": 1,
+            "id": "BEX-152"
+          },
+          {
+            "count": 1,
+            "id": "BEX-151"
+          },
+          {
+            "count": 1,
+            "id": "BEX-156"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Berserker",
+      "id": "7d9eb4ab-a1f8-4281-9d2a-a65b86c15f76",
+      "cardCount": 24,
+      "createdAt": "2026-11-25T16:42:27.908Z",
+      "lastModifiedAt": "2026-11-25T16:42:31.902Z",
+      "game": "The Journey TCG",
+      "format": [
+        "Classic"
+      ],
+      "deckList": {
+        "categoriesOrder": [
+          "Adventurer",
+          "Ability",
+          "Equipment",
+          "Item"
+        ],
+        "Adventurer": [
+          {
+            "count": 1,
+            "id": "BEX-019"
+          },
+          {
+            "count": 1,
+            "id": "BEX-021"
+          },
+          {
+            "count": 1,
+            "id": "BEX-031"
+          }
+        ],
+        "Ability": [
+          {
+            "count": 2,
+            "id": "BEX-081"
+          },
+          {
+            "count": 2,
+            "id": "A-BEX-085"
+          },
+          {
+            "count": 2,
+            "id": "BEX-122"
+          },
+          {
+            "count": 1,
+            "id": "BEX-119"
+          },
+          {
+            "count": 1,
+            "id": "BEX-120"
+          },
+          {
+            "count": 1,
+            "id": "BEX-087"
+          },
+          {
+            "count": 1,
+            "id": "BEX-127"
+          },
+          {
+            "count": 1,
+            "id": "BEX-124"
+          },
+          {
+            "count": 1,
+            "id": "BEX-129"
+          },
+          {
+            "count": 1,
+            "id": "BEX-093"
+          },
+          {
+            "count": 1,
+            "id": "BEX-111"
+          }
+        ],
+        "Equipment": [
+          {
+            "count": 1,
+            "id": "BEX-134"
+          }
+        ],
+        "Item": [
+          {
+            "count": 1,
+            "id": "BEX-157"
+          },
+          {
+            "count": 1,
+            "id": "BEX-151"
+          },
+          {
+            "count": 1,
+            "id": "BEX-156"
+          },
+          {
+            "count": 1,
+            "id": "BEX-152"
+          },
+          {
+            "count": 1,
+            "id": "BEX-153"
+          },
+          {
+            "count": 1,
+            "id": "BEX-149"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Dark Mage",
+      "id": "198ccbc0-2af6-4e22-80fa-156e35cdd4ae",
+      "cardCount": 24,
+      "createdAt": "2026-11-25T16:43:07.290Z",
+      "lastModifiedAt": "2026-11-25T16:43:11.198Z",
+      "game": "The Journey TCG",
+      "format": [
+        "Classic"
+      ],
+      "deckList": {
+        "categoriesOrder": [
+          "Adventurer",
+          "Ability",
+          "Equipment",
+          "Item"
+        ],
+        "Adventurer": [
+          {
+            "count": 1,
+            "id": "BEX-024"
+          },
+          {
+            "count": 1,
+            "id": "BEX-025"
+          },
+          {
+            "count": 1,
+            "id": "BEX-052"
+          }
+        ],
+        "Ability": [
+          {
+            "count": 1,
+            "id": "BEX-058"
+          },
+          {
+            "count": 2,
+            "id": "BEX-100"
+          },
+          {
+            "count": 1,
+            "id": "BEX-101"
+          },
+          {
+            "count": 1,
+            "id": "BEX-063"
+          },
+          {
+            "count": 2,
+            "id": "BEX-103"
+          },
+          {
+            "count": 1,
+            "id": "BEX-104"
+          },
+          {
+            "count": 1,
+            "id": "BEX-067"
+          },
+          {
+            "count": 1,
+            "id": "B-BEX-074"
+          },
+          {
+            "count": 1,
+            "id": "BEX-096"
+          },
+          {
+            "count": 1,
+            "id": "BEX-109"
+          },
+          {
+            "count": 1,
+            "id": "BEX-110"
+          },
+          {
+            "count": 1,
+            "id": "BEX-112"
+          },
+          {
+            "count": 1,
+            "id": "B-BEX-113"
+          }
+        ],
+        "Equipment": [
+          {
+            "count": 1,
+            "id": "BEX-137"
+          },
+          {
+            "count": 1,
+            "id": "BEX-143"
+          }
+        ],
+        "Item": [
+          {
+            "count": 1,
+            "id": "BEX-149"
+          },
+          {
+            "count": 1,
+            "id": "BEX-157"
+          },
+          {
+            "count": 1,
+            "id": "BEX-156"
+          },
+          {
+            "count": 1,
+            "id": "BEX-151"
+          }
+        ]
+      }
+    }
+]
