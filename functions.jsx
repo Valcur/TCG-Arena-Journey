@@ -127,7 +127,11 @@ function pass() {
     log("pass:", passed.length ? passed.join(", ") : "no Adventurer of mine was active", "/ active:", active)
 }
 
-/** Nouveau tour : chaque joueur récupère ses Step Back et ses actions, et la priorité passe au joueur suivant */
+/**
+ * Nouveau tour : chaque joueur récupère ses Step Back et ses actions, et la priorité passe au joueur suivant.
+ * Les entrées de tous les joueurs dans Order sont remises à zéro tout de suite, sans attendre leur onOpponentUpdate,
+ * et les stats du joueur local y sont reportées directement, sans dépendre de onUpdate.
+ */
 function newTurn() {
     log("newTurn: turn", game.turn.count, "/ my turn", game.turn.isMyTurn)
     syncIdentity()
@@ -135,7 +139,15 @@ function newTurn() {
         if (game.data.Stats["step" + n]) game.data.Stats["step" + n] = false
         if (game.data.Stats["done" + n]) game.data.Stats["done" + n] = false
     }
-    rebuildOrder()
+
+    const players = {}
+    for (const [k, p] of Object.entries(game.data.Order.players ?? {})) {
+        if (!p) continue
+        players[k] = { ...p, heroes: (p.heroes ?? []).map(h => ({ ...h, step: false, done: false })) }
+    }
+    game.data.Order.players = players
+
+    storeStats(game.data.Stats, game.pseudo, game.playerId)
 }
 
 // ─────────────────────────────── Bloc partagé Order ───────────────────────────────
