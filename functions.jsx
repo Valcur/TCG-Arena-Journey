@@ -32,13 +32,17 @@ function toNumber(value) {
 
 // ─────────────────────────────── Initialisation ───────────────────────────────
 
+/** Section où le moteur pose les Adventurers en début de partie (categoriesAlreadyOnBoard) */
+const START_SECTION = "Hero2"
+
 /**
- * Répartit les 3 Adventurers posés en Hero1 sur Hero1, Hero2 et Hero3 et remplit le bloc Stats du joueur
- * (identifiant, nom, PV, Agility, Step Back, action faite), puis reporte ces stats dans Order sans attendre onUpdate.
+ * Répartit les 3 Adventurers posés en Hero2 : le 1er va en Hero1, le 2e reste en Hero2, le 3e va en Hero3.
+ * Remplit ensuite le bloc Stats du joueur (identifiant, nom, PV, Agility, Step Back, action faite), puis reporte
+ * ces stats dans Order sans attendre onUpdate.
  */
 async function ini() {
-    const adventurers = [...(cards?.Hero1 ?? [])].slice(0, HERO_SECTIONS.length)
-    log("ini: position", myPosition(), "/ host", game.isHost, "/", adventurers.length, "Adventurer(s) in Hero1")
+    const adventurers = [...(cards?.[START_SECTION] ?? [])].slice(0, HERO_SECTIONS.length)
+    log("ini: position", myPosition(), "/ host", game.isHost, "/", adventurers.length, "Adventurer(s) in", START_SECTION)
 
     if (adventurers.length === 0) {
         syncIdentity()
@@ -46,7 +50,8 @@ async function ini() {
         return
     }
 
-    for (let i = 1; i < adventurers.length; i++) {
+    for (let i = 0; i < adventurers.length; i++) {
+        if (HERO_SECTIONS[i] === START_SECTION) continue
         log("ini: moving to", HERO_SECTIONS[i])
         await functions.moveCard(adventurers[i], HERO_SECTIONS[i])
     }
