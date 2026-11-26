@@ -151,11 +151,9 @@ function newTurn() {
 }
 
 // ─────────────────────────────── Bloc partagé Order ───────────────────────────────
-// Tous les joueurs recalculent Order : chez l'hôte la mise à jour est diffusée à tous, chez les autres elle reste
-// locale (affichage immédiat) jusqu'à ce que la version de l'hôte arrive.
-
-/** Joueurs dont on a déjà reçu les stats au moins une fois (identifiants) */
-const knownPlayers = new Set()
+// Tous les joueurs recalculent Order à partir des blocs Stats reçus : chez l'hôte la mise à jour est diffusée à tous,
+// chez les autres elle reste locale. Le joueur prioritaire tiré par l'hôte transite par son bloc Stats
+// (Stats.priorityStart), que tous les joueurs reçoivent, pour ne pas dépendre de la diffusion d'Order.
 
 /** onUpdate du bloc Stats : reporte ses propres stats dans Order */
 function onMyStatsUpdate() {
@@ -166,8 +164,9 @@ function onMyStatsUpdate() {
 
 /**
  * onOpponentUpdate du bloc Stats : reporte les stats de l'adversaire dans Order.
- * À la première réception d'un joueur, renvoie ses propres stats (incrément de Stats.rev) : ce joueur a pu arriver
- * ou charger son script après notre dernier envoi, et onOpponentUpdate ne se déclenche que sur un changement.
+ * - À la première réception d'un joueur, ajoute son identifiant à Stats.knownPlayers : cette modification renvoie
+ *   nos propres stats à tous (ce joueur a pu les manquer). Elle n'a lieu qu'une fois par joueur, sans boucle.
+ * - Reprend le joueur prioritaire tiré par l'hôte s'il est présent dans ses stats.
  */
 function onOpponentStats(opponentGame) {
     const stats = opponentGame?.data?.Stats
@@ -175,10 +174,16 @@ function onOpponentStats(opponentGame) {
     log("onOpponentStats: player", playerId, "/ position", stats?.position, "/ pseudo", stats?.pseudo || opponentGame?.pseudo)
 
     syncIdentity()
-    if (isSet(playerId) && !knownPlayers.has(playerId)) {
-        knownPlayers.add(playerId)
-        game.data.Stats.rev = toNumber(game.data.Stats.rev) + 1
-        log("onOpponentStats: new player", playerId, "-> resending my stats (rev", game.data.Stats.rev + ")")
+
+    const known = game.data.Stats.knownPlayers ?? []
+    if (isSet(playerId) && !known.includes(playerId)) {
+        game.data.Stats.knownPlayers = [...known, playerId]
+        log("onOpponentStats: new player", playerId, "-> my stats are sent again")
+    }
+
+    if (isSet(stats?.priorityStart) && game.data.Order.priorityStart !== stats.priorityStart) {
+        game.data.Order.priorityStart = stats.priorityStart
+        log("onOpponentStats: starting priority player from host", stats.priorityStart)
     }
 
     storeStats(stats, opponentGame?.pseudo, opponentGame?.playerId)
@@ -228,9 +233,12 @@ function storeStats(stats, pseudoFallback, playerIdFallback) {
  *   puis le joueur suivant à chaque nouveau tour.
  */
 function rebuildOrder() {
-    if (game.isHost && !isSet(game.data.Order.priorityStart)) {
-        game.data.Order.priorityStart = Math.floor(Math.random() * Math.max(1, toNumber(game.turn.totalPlayers)))
-        log("rebuildOrder: random starting priority player", game.data.Order.priorityStart)
+    if (game.isHost && !isSet(game.data.Stats.priorityStart)) {
+        game.data.Stats.priorityStart = Math.floor(Math.random() * Math.max(1, toNumber(game.turn.totalPlayers)))
+        log("rebuildOrder: random starting priority player", game.data.Stats.priorityStart)
+    }
+    if (isSet(game.data.Stats.priorityStart) && game.data.Order.priorityStart !== game.data.Stats.priorityStart) {
+        game.data.Order.priorityStart = game.data.Stats.priorityStart
     }
 
     const players = Object.values(game.data.Order.players ?? {})
