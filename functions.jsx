@@ -34,18 +34,17 @@ function toNumber(value) {
 
 /**
  * Répartit les 3 Adventurers posés en Hero1 sur Hero1, Hero2 et Hero3 et remplit le bloc Stats du joueur
- * (identifiant, nom, PV, Agility, Step Back, action faite). L'hôte tire aussi le joueur qui a la priorité au premier tour.
+ * (identifiant, nom, PV, Agility, Step Back, action faite), puis reporte ces stats dans Order sans attendre onUpdate.
  */
 async function ini() {
     const adventurers = [...(cards?.Hero1 ?? [])].slice(0, HERO_SECTIONS.length)
     log("ini: position", myPosition(), "/ host", game.isHost, "/", adventurers.length, "Adventurer(s) in Hero1")
 
-    if (game.isHost && !isSet(game.data.Order.priorityStart)) {
-        game.data.Order.priorityStart = Math.floor(Math.random() * Math.max(1, game.turn.totalPlayers))
-        log("ini: random starting priority player", game.data.Order.priorityStart)
+    if (adventurers.length === 0) {
+        syncIdentity()
+        rebuildOrder()
+        return
     }
-
-    if (adventurers.length === 0) return
 
     for (let i = 1; i < adventurers.length; i++) {
         log("ini: moving to", HERO_SECTIONS[i])
@@ -63,6 +62,7 @@ async function ini() {
         log(`ini: Adventurer ${n} = ${game.data.Stats["name" + n]}, HP ${game.data.Stats["hp" + n]}, Agility ${game.data.Stats["agi" + n]}`)
     })
     syncIdentity()
+    storeStats(game.data.Stats, game.pseudo, game.playerId)
 
     await functions.repositionCards()
 }
@@ -154,16 +154,33 @@ function newTurn() {
 // Tous les joueurs recalculent Order : chez l'hôte la mise à jour est diffusée à tous, chez les autres elle reste
 // locale (affichage immédiat) jusqu'à ce que la version de l'hôte arrive.
 
+/** Joueurs dont on a déjà reçu les stats au moins une fois (identifiants) */
+const knownPlayers = new Set()
+
 /** onUpdate du bloc Stats : reporte ses propres stats dans Order */
 function onMyStatsUpdate() {
     log("onMyStatsUpdate: my stats changed / host", game.isHost)
+    syncIdentity()
     storeStats(game.data.Stats, game.pseudo, game.playerId)
 }
 
-/** onOpponentUpdate du bloc Stats : reporte les stats de l'adversaire dans Order */
+/**
+ * onOpponentUpdate du bloc Stats : reporte les stats de l'adversaire dans Order.
+ * À la première réception d'un joueur, renvoie ses propres stats (incrément de Stats.rev) : ce joueur a pu arriver
+ * ou charger son script après notre dernier envoi, et onOpponentUpdate ne se déclenche que sur un changement.
+ */
 function onOpponentStats(opponentGame) {
     const stats = opponentGame?.data?.Stats
-    log("onOpponentStats: player", stats?.playerId ?? opponentGame?.playerId, "/ position", stats?.position, "/ pseudo", stats?.pseudo || opponentGame?.pseudo)
+    const playerId = stats?.playerId ?? opponentGame?.playerId
+    log("onOpponentStats: player", playerId, "/ position", stats?.position, "/ pseudo", stats?.pseudo || opponentGame?.pseudo)
+
+    syncIdentity()
+    if (isSet(playerId) && !knownPlayers.has(playerId)) {
+        knownPlayers.add(playerId)
+        game.data.Stats.rev = toNumber(game.data.Stats.rev) + 1
+        log("onOpponentStats: new player", playerId, "-> resending my stats (rev", game.data.Stats.rev + ")")
+    }
+
     storeStats(stats, opponentGame?.pseudo, opponentGame?.playerId)
 }
 
@@ -207,9 +224,15 @@ function storeStats(stats, pseudoFallback, playerIdFallback) {
  *   sep = séparateur affiché avant l'élément ("›" Agility différente, "=" égalité, "" pour le premier).
  * - active : clés "position-emplacement" des Adventurers qui n'ont pas encore agi et qui partagent la meilleure
  *   place restante (même groupe Step Back, même Agility). Le groupe suivant devient actif quand tous ont passé.
- * - priority / priorityPseudo : joueur tiré au premier tour, puis le joueur suivant à chaque nouveau tour.
+ * - priority / priorityPseudo : joueur tiré au hasard par l'hôte la première fois qu'il recalcule l'ordre,
+ *   puis le joueur suivant à chaque nouveau tour.
  */
 function rebuildOrder() {
+    if (game.isHost && !isSet(game.data.Order.priorityStart)) {
+        game.data.Order.priorityStart = Math.floor(Math.random() * Math.max(1, toNumber(game.turn.totalPlayers)))
+        log("rebuildOrder: random starting priority player", game.data.Order.priorityStart)
+    }
+
     const players = Object.values(game.data.Order.players ?? {})
         .filter(p => p && isSet(p.position))
         .sort((a, b) => a.position - b.position)
