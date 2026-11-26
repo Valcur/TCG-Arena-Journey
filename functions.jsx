@@ -113,6 +113,22 @@ function stepBack(index) {
     log(`stepBack: Adventurer ${index} (${game.data.Stats["name" + index]})`)
 }
 
+/** Remet l'Agility des 3 Adventurers du joueur à la valeur imprimée sur leur carte */
+function resetAgility() {
+    HERO_INDEXES.forEach((n, i) => {
+        const sectionCards = cards?.[HERO_SECTIONS[i]] ?? []
+        const adventurer = sectionCards.find(card => functions.getCardData(card)?.type === "Adventurer") ?? sectionCards[0]
+        if (!adventurer) {
+            log(`resetAgility: no card in ${HERO_SECTIONS[i]}`)
+            return
+        }
+        const agility = toNumber(functions.getCardData(adventurer)?.agility)
+        game.data.Stats["agi" + n] = agility
+        log(`resetAgility: Adventurer ${n} (${game.data.Stats["name" + n]}) -> Agility ${agility}`)
+    })
+    storeStats(game.data.Stats, game.pseudo, game.playerId)
+}
+
 /** Pass : marque comme ayant agi tous les Adventurers du joueur dont c'est actuellement le tour */
 function pass() {
     syncIdentity()
