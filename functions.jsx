@@ -57,6 +57,7 @@ async function ini() {
         game.data.Stats["name" + n] = shortName(data?.name)
         game.data.Stats["hp" + n] = toNumber(data?.hp)
         game.data.Stats["agi" + n] = toNumber(data?.agility)
+        game.data.Stats["baseAgi" + n] = toNumber(data?.agility)
         game.data.Stats["step" + n] = false
         game.data.Stats["done" + n] = false
         log(`ini: Adventurer ${n} = ${game.data.Stats["name" + n]}, HP ${game.data.Stats["hp" + n]}, Agility ${game.data.Stats["agi" + n]}`)
@@ -124,6 +125,7 @@ function resetAgility() {
         }
         const agility = toNumber(functions.getCardData(adventurer)?.agility)
         game.data.Stats["agi" + n] = agility
+        game.data.Stats["baseAgi" + n] = agility
         log(`resetAgility: Adventurer ${n} (${game.data.Stats["name" + n]}) -> Agility ${agility}`)
     })
     storeStats(game.data.Stats, game.pseudo, game.playerId)
