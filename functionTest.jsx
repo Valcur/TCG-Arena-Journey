@@ -223,7 +223,7 @@ async function newTurn() {
  * onCardsEnter de la section Discard : les cartes défaussées partent dans ExileHidden, le Cycle face cachée.
  * transitionCards contient les cartes qui viennent d'entrer dans Discard.
  */
-async function cycleCards(transitionCards) {
+async function cycleCards() {
     const entered = transitionCards ?? []
     if (entered.length === 0) return
     log("cycleCards:", entered.length, "card(s) from Discard to ExileHidden")
