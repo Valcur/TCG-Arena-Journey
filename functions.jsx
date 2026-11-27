@@ -109,9 +109,16 @@ function heroCard(index) {
  * retournée face visible. Stats.koN mémorise l'état pour n'agir qu'au changement.
  */
 async function setHp(index, value) {
+    const previous = toNumber(game.data.Stats["hp" + index])
     const hp = toNumber(value)
     game.data.Stats["hp" + index] = hp
     log(`setHp: Adventurer ${index} -> ${hp} HP`)
+
+    const diff = hp - previous
+    if (diff !== 0) {
+        const name = game.data.Stats["name" + index] || `Adventurer ${index}`
+        functions.chatLog(`${name} ${diff > 0 ? "+" : ""}${diff} HP (${previous} → ${hp})`)
+    }
 
     const knockedOut = hp <= 0
     if (!!game.data.Stats["ko" + index] === knockedOut) return
@@ -208,6 +215,20 @@ async function newTurn() {
     game.data.Order.players = players
 
     storeStats(game.data.Stats, game.pseudo, game.playerId)
+}
+
+// ─────────────────────────────── Cycle (défausse face cachée) ───────────────────────────────
+
+/**
+ * onCardsEnter de la section Discard : une carte posée par erreur dans la défausse par défaut part dans le Cycle,
+ * l'extra deck face cachée. transitionCards contient les cartes qui viennent d'entrer dans Discard.
+ */
+async function cycleCards(transitionCards) {
+    const entered = cards.Discard ?? []
+    if (entered.length === 0) return
+    log("cycleCards:", entered.length, "card(s) from Discard to Cycle")
+    await functions.moveCards(entered, "Cycle", { noLogs: true })
+    await functions.repositionCards()
 }
 
 // ─────────────────────────────── Bloc partagé Order ───────────────────────────────
