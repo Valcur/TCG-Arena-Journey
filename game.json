@@ -13,7 +13,7 @@
         ],
         "decksUrl": "https://valcur.github.io/TCG-Arena-Journey/decks.json"
     },
-    "customHelp": "Learn to play at https://www.journeytcg.com/how-to-play\n\nIn front of your Adventurers: their total Agility and HP. Edit them directly, the turn order updates for everyone. The arrow button is Step Back. The button on the left resets the Agility of all your Adventurers to their printed value.\n\nThe bar in the middle shows the Agility order of all Adventurers. Blue = yours, red = opponents, dashed = Step Back, faded = already acted.\n\nThe Adventurers whose turn it is are highlighted. When it's one of yours, click Pass once you're done to let the next Adventurers act.\n\nHidden abilities go face down in the Hidden zone behind your Adventurers. Lasting abilities and Enhancements go in the Remain zone on the left.\n\nOnce the battle block is complete, all players have to pass their turn (press space or click the arrow button at the top left of your screen) to start the next turn.\n\nHold C to add counters to your Adventurer and count focus.\n\nDefault backgrounds by Misoshiru Studio.",
+    "customHelp": "Learn to play at https://www.journeytcg.com/how-to-play\n\nIn front of your Adventurers: their total Agility and HP. Edit them directly, the turn order updates for everyone. The arrow button is Step Back. The button on the left resets the Agility of all your Adventurers to their printed value.\nHold C to add counters to your Adventurer and count Focus.\n\nThe bar in the middle shows the Agility order of all Adventurers. Blue = yours, red = opponents, dashed = Step Back, faded = already acted.\nThe Adventurers whose turn it is are highlighted. When it's one of yours, click Pass once you're done to let the next Adventurers act.\nOnce the battle block is complete, all players have to pass their turn (press space or click the arrow button at the top left of your screen) to start the next turn.\n\nEnhancements go in the zone under the Adventurer they apply to. Hidden abilities go face down in the Hidden zone, Lasting cards and Party Enhancements in the Lasting zone, both on the left.\n\nDefault backgrounds by Misoshiru Studio.",
     "cards": {
         "dataUrl": "https://valcur.github.io/TCG-Arena-Journey/JourneyCards.json",
         "cardBack": "https://valcur.github.io/TCG-Arena-Journey/Images/cardBack.jpg"
@@ -74,7 +74,6 @@
                     "style": {
                         "--journey-hero-width": "calc(18vh / 1.398 + 0.9vh)",
                         "--journey-column-width": "calc(18vh / 1.398 + 7vh)",
-                        "--journey-hidden-width": "calc(var(--journey-column-width) * 1.7)",
                         "--journey-gap": "3vh",
                         "--journey-stat-width": "calc(15 * var(--journey-icon-pixel))",
                         "--journey-stat-height": "calc(14 * var(--journey-icon-pixel))",
@@ -100,11 +99,18 @@
                             "direction": "column",
                             "style": {
                                 "width": "var(--journey-remain-width)",
-                                "flexShrink": "0"
+                                "flexShrink": "0",
+                                "gap": "1vh"
                             },
                             "content": [
                                 {
-                                    "section": "Remain",
+                                    "section": "Lasting",
+                                    "style": {
+                                        "flexGrow": "1"
+                                    }
+                                },
+                                {
+                                    "section": "Hidden",
                                     "style": {
                                         "flexGrow": "1"
                                     }
@@ -155,6 +161,12 @@
                                                             }
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "section": "Enhance1",
+                                                    "style": {
+                                                        "width": "100%"
+                                                    }
                                                 }
                                             ]
                                         },
@@ -182,6 +194,12 @@
                                                             }
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "section": "Enhance2",
+                                                    "style": {
+                                                        "width": "100%"
+                                                    }
                                                 }
                                             ]
                                         },
@@ -209,17 +227,16 @@
                                                             }
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "section": "Enhance3",
+                                                    "style": {
+                                                        "width": "100%"
+                                                    }
                                                 }
                                             ]
                                         }
                                     ]
-                                },
-                                {
-                                    "section": "Hidden",
-                                    "style": {
-                                        "width": "var(--journey-hidden-width)",
-                                        "marginTop": "0.5vh"
-                                    }
                                 }
                             ]
                         },
@@ -292,20 +309,43 @@
                         ],
                         "noQuickActions": true
                     },
-                    "Hidden": {
-                        "isHidden": "yes",
+                    "Enhance1": {
+                        "isHidden": "no",
                         "height": 8,
                         "alignment": "CENTER",
+                        "displayedTitle": "Enhancements",
+                        "noQuickActions": true
+                    },
+                    "Enhance2": {
+                        "isHidden": "no",
+                        "height": 8,
+                        "alignment": "CENTER",
+                        "displayedTitle": "Enhancements",
+                        "noQuickActions": true
+                    },
+                    "Enhance3": {
+                        "isHidden": "no",
+                        "height": 8,
+                        "alignment": "CENTER",
+                        "displayedTitle": "Enhancements",
+                        "noQuickActions": true
+                    },
+                    "Hidden": {
+                        "isHidden": "yes",
+                        "height": 12,
+                        "alignment": "START",
+                        "direction": "vertical",
+                        "reverseZOrder": true,
                         "displayedTitle": "Hidden",
                         "noQuickActions": true
                     },
-                    "Remain": {
+                    "Lasting": {
                         "isHidden": "no",
                         "height": 12,
                         "alignment": "START",
                         "direction": "vertical",
                         "reverseZOrder": true,
-                        "displayedTitle": "Remain",
+                        "displayedTitle": "Lasting",
                         "noQuickActions": true
                     },
                     "Stats": {
