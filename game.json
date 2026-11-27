@@ -1,6 +1,6 @@
 {
     "name": "The Journey TCG",
-    "menuBackgroundImage": "https://valcur.github.io/TCG-Arena-Journey/Images/banner.jpg",
+    "menuBackgroundImage": "https://valcur.github.io/TCG-Arena-Journey/Images/banner.png",
     "scriptsUrls": [
         "https://valcur.github.io/TCG-Arena-Journey/functions.jsx"
     ],
