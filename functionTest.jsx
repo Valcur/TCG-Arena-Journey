@@ -227,6 +227,7 @@ async function cycleCards() {
     const entered = transitionCards ?? []
     if (entered.length === 0) return
     log("cycleCards:", entered.length, "card(s) from Discard to ExileHidden")
+    await functions.repositionCards()
     await functions.moveCards(entered, "ExileHidden", { noLogs: true })
     await functions.repositionCards()
 }
