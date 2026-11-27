@@ -217,21 +217,6 @@ async function newTurn() {
     storeStats(game.data.Stats, game.pseudo, game.playerId)
 }
 
-// ─────────────────────────────── Cycle (défausse face cachée) ───────────────────────────────
-
-/**
- * onCardsEnter de la section Discard : les cartes défaussées partent dans ExileHidden, le Cycle face cachée.
- * transitionCards contient les cartes qui viennent d'entrer dans Discard.
- */
-async function cycleCards() {
-    const entered = cards.Discard ?? []
-    if (entered.length === 0) return
-    log("cycleCards:", entered.length, "card(s) from Discard to ExileHidden")
-    console.log(entered)
-    await functions.moveCards(entered, "Lasting", { noLogs: true })
-    await functions.repositionCards()
-}
-
 // ─────────────────────────────── Bloc partagé Order ───────────────────────────────
 // Tous les joueurs recalculent Order à partir des blocs Stats reçus : chez l'hôte la mise à jour est diffusée à tous,
 // chez les autres elle reste locale. Le joueur prioritaire tiré par l'hôte transite par son bloc Stats
