@@ -97,10 +97,33 @@ function syncIdentity() {
 
 // ─────────────────────────────── Actions du joueur (bloc Stats) ───────────────────────────────
 
-/** PV de l'Adventurer n° index (1 à 3) */
-function setHp(index, value) {
-    game.data.Stats["hp" + index] = toNumber(value)
-    log(`setHp: Adventurer ${index} -> ${game.data.Stats["hp" + index]} HP`)
+/** Carte Adventurer de la zone Hero n° index (1 à 3) : les Equipment peuvent être groupés dans la même zone */
+function heroCard(index) {
+    const sectionCards = cards?.[HERO_SECTIONS[index - 1]] ?? []
+    return sectionCards.find(card => functions.getCardData(card)?.type === "Adventurer") ?? sectionCards[0] ?? null
+}
+
+/**
+ * PV de l'Adventurer n° index (1 à 3).
+ * À 0 PV ou moins, la carte est retournée face cachée (Knocked Out) ; si elle remonte au-dessus de 0, elle est
+ * retournée face visible. Stats.koN mémorise l'état pour n'agir qu'au changement.
+ */
+async function setHp(index, value) {
+    const hp = toNumber(value)
+    game.data.Stats["hp" + index] = hp
+    log(`setHp: Adventurer ${index} -> ${hp} HP`)
+
+    const knockedOut = hp <= 0
+    if (!!game.data.Stats["ko" + index] === knockedOut) return
+
+    const card = heroCard(index)
+    if (!card) {
+        log(`setHp: no card in ${HERO_SECTIONS[index - 1]}`)
+        return
+    }
+    await functions.hideCards([card], knockedOut ? "yes" : "no")
+    game.data.Stats["ko" + index] = knockedOut
+    log(`setHp: Adventurer ${index} (${game.data.Stats["name" + index]}) ${knockedOut ? "Knocked Out, face down" : "back face up"}`)
 }
 
 /** Agility totale de l'Adventurer n° index (1 à 3) */
@@ -122,8 +145,7 @@ function stepBack(index) {
 /** Remet l'Agility des 3 Adventurers du joueur à la valeur imprimée sur leur carte */
 function resetAgility() {
     HERO_INDEXES.forEach((n, i) => {
-        const sectionCards = cards?.[HERO_SECTIONS[i]] ?? []
-        const adventurer = sectionCards.find(card => functions.getCardData(card)?.type === "Adventurer") ?? sectionCards[0]
+        const adventurer = heroCard(n)
         if (!adventurer) {
             log(`resetAgility: no card in ${HERO_SECTIONS[i]}`)
             return
@@ -136,31 +158,46 @@ function resetAgility() {
     storeStats(game.data.Stats, game.pseudo, game.playerId)
 }
 
-/** Pass : marque comme ayant agi tous les Adventurers du joueur dont c'est actuellement le tour */
-function pass() {
+/**
+ * Pass : marque comme ayant agi tous les Adventurers du joueur dont c'est actuellement le tour,
+ * et les Exhaust (carte inclinée, cardRotation du gamefile).
+ */
+async function pass() {
     syncIdentity()
     const active = game.data.Order.active ?? []
     const passed = []
+    const toExhaust = []
     HERO_INDEXES.forEach((n, slot) => {
         if (active.includes(heroKey(game.data.Stats.position, slot)) && !game.data.Stats["done" + n]) {
             game.data.Stats["done" + n] = true
             passed.push(game.data.Stats["name" + n])
+            const card = heroCard(n)
+            if (card && !card.isTapped) toExhaust.push(card)
         }
     })
     log("pass:", passed.length ? passed.join(", ") : "no Adventurer of mine was active", "/ active:", active)
+
+    if (toExhaust.length) await functions.updateCards(toExhaust, { isTapped: true })
 }
 
 /**
- * Nouveau tour : chaque joueur récupère ses Step Back et ses actions, et la priorité passe au joueur suivant.
+ * Nouveau tour : chaque joueur récupère ses Step Back et ses actions, ses Adventurers Exhaust sont redressés,
+ * et la priorité passe au joueur suivant.
  * Les entrées de tous les joueurs dans Order sont remises à zéro tout de suite, sans attendre leur onOpponentUpdate,
  * et les stats du joueur local y sont reportées directement, sans dépendre de onUpdate.
  */
-function newTurn() {
+async function newTurn() {
     log("newTurn: turn", game.turn.count, "/ my turn", game.turn.isMyTurn)
     syncIdentity()
     for (const n of HERO_INDEXES) {
         if (game.data.Stats["step" + n]) game.data.Stats["step" + n] = false
         if (game.data.Stats["done" + n]) game.data.Stats["done" + n] = false
+    }
+
+    const exhausted = HERO_INDEXES.map(heroCard).filter(card => card?.isTapped)
+    if (exhausted.length) {
+        log("newTurn: readying", exhausted.length, "Adventurer(s)")
+        await functions.updateCards(exhausted, { isTapped: false })
     }
 
     const players = {}
