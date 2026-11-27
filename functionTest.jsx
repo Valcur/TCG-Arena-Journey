@@ -228,7 +228,7 @@ async function cycleCards() {
     if (entered.length === 0) return
     log("cycleCards:", entered.length, "card(s) from Discard to ExileHidden")
     console.log(entered)
-    await functions.moveCards(entered, "ExileHidden", { noLogs: true })
+    await functions.moveCards(entered, "Lasting", { noLogs: true })
     await functions.repositionCards()
 }
 
