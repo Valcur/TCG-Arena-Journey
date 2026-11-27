@@ -228,6 +228,7 @@ async function cycleCards(transitionCards) {
     if (entered.length === 0) return
     log("cycleCards:", entered.length, "card(s) from Discard to Cycle")
     await functions.moveCards(entered, "Cycle", { noLogs: true })
+    await functions.repositionCards()
 }
 
 // ─────────────────────────────── Bloc partagé Order ───────────────────────────────
