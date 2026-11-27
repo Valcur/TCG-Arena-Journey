@@ -7,13 +7,13 @@
     "cardRotation": 45,
     "defaultRessources": {
         "backgrounds": [
-            "https://valcur.github.io/TCG-Arena-Journey/Images/background1.png",
-            "https://valcur.github.io/TCG-Arena-Journey/Images/background2.png",
-            "https://valcur.github.io/TCG-Arena-Journey/Images/background3.png"
+            "https://valcur.github.io/TCG-Arena-Journey/Images/Backgrounds/background1.png",
+            "https://valcur.github.io/TCG-Arena-Journey/Images/Backgrounds/background2.png",
+            "https://valcur.github.io/TCG-Arena-Journey/Images/Backgrounds/background3.png"
         ],
         "decksUrl": "https://valcur.github.io/TCG-Arena-Journey/decks.json"
     },
-    "customHelp": "Learn to play at https://www.journeytcg.com/how-to-play\n\nIn front of your Adventurers: their total Agility and HP. Edit them directly, the turn order updates for everyone. The arrow button is Step Back (once per turn).\n\nThe bar in the middle shows the Agility order of all Adventurers. Blue = yours, red = opponents, dashed = Step Back, faded = already acted.\n\nThe Adventurers whose turn it is are highlighted. When it's one of yours, click Pass once you're done to let the next Adventurers act.\n\nHidden abilities go face down in the Hidden zone behind your Adventurers. Lasting abilities and Enhancements go in the Remain zone on the left.\n\nOnce the battle block is complete, all players have to pass their turn (press space or click the arrow button at the top left of your screen) to start the next turn.\n\nDefault backgrounds by Misoshiru Studio.",
+    "customHelp": "Learn to play at https://www.journeytcg.com/how-to-play\n\nIn front of your Adventurers: their total Agility and HP. Edit them directly, the turn order updates for everyone. The arrow button is Step Back (once per turn). The button on the left resets the Agility of all your Adventurers to their printed value.\n\nThe bar in the middle shows the Agility order of all Adventurers. Blue = yours, red = opponents, dashed = Step Back, faded = already acted.\n\nThe Adventurers whose turn it is are highlighted. When it's one of yours, click Pass once you're done to let the next Adventurers act.\n\nHidden abilities go face down in the Hidden zone behind your Adventurers. Lasting abilities and Enhancements go in the Remain zone on the left.\n\nOnce the battle block is complete, all players have to pass their turn (press space or click the arrow button at the top left of your screen) to start the next turn.\n\nHold to add counters to your Adventurer and count focus.\n\nDefault backgrounds by Misoshiru Studio.",
     "cards": {
         "dataUrl": "https://valcur.github.io/TCG-Arena-Journey/JourneyCards.json",
         "cardBack": "https://valcur.github.io/TCG-Arena-Journey/Images/cardBack.jpg"
@@ -72,26 +72,28 @@
                     "direction": "row",
                     "isSymetricalForOpponents": true,
                     "style": {
-                        "--journey-hero-width": "calc(17vh / 1.398 + 1.1vh)",
-                        "--journey-column-width": "calc(17vh / 1.398 + 7vh)",
+                        "--journey-hero-width": "calc(18vh / 1.398 + 0.9vh)",
+                        "--journey-column-width": "calc(18vh / 1.398 + 7vh)",
                         "--journey-hidden-width": "calc(var(--journey-column-width) * 1.7)",
-                        "--journey-gap": "1vh",
-                        "--journey-stat-width": "4.5vh",
-                        "--journey-stat-height": "4.2vh",
+                        "--journey-gap": "3vh",
+                        "--journey-stat-width": "calc(15 * var(--journey-icon-pixel))",
+                        "--journey-stat-height": "calc(14 * var(--journey-icon-pixel))",
                         "--journey-stat-gap": "1.5vh",
                         "--journey-stat-text-color": "#000102",
-                        "--journey-stat-font-size": "1.7vh",
+                        "--journey-stat-font-size": "calc(6 * var(--journey-icon-pixel))",
                         "--journey-active-me": "#3d5a8f",
                         "--journey-active-opp": "#8a3d38",
                         "--journey-stat-bg": "#261c19",
                         "--journey-frame": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/panel-hollow-2x.png)",
                         "--journey-frame-width": "0.8vh",
                         "--journey-remain-width": "calc(12vh / 1.398 + 1vh)",
+                        "marginTop": "-0.5vh",
                         "width": "100%",
                         "alignItems": "stretch",
                         "gap": "var(--journey-gap)",
                         "--journey-frame-radius": "0",
-                        "--journey-pixel": "calc(var(--journey-frame-width) / 4)"
+                        "--journey-pixel": "calc(var(--journey-frame-width) / 4)",
+                        "--journey-icon-pixel": "0.25vh"
                     },
                     "content": [
                         {
@@ -114,7 +116,8 @@
                             "style": {
                                 "flex": "1 1 0",
                                 "minWidth": "0",
-                                "alignItems": "center"
+                                "alignItems": "center",
+                                "gap": "0.25vh"
                             },
                             "content": [
                                 {
@@ -138,10 +141,20 @@
                                             },
                                             "content": [
                                                 {
-                                                    "section": "Hero1",
+                                                    "direction": "row",
+                                                    "isSymetricalForOpponents": true,
                                                     "style": {
                                                         "width": "var(--journey-hero-width)"
-                                                    }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "section": "Hero1",
+                                                            "style": {
+                                                                "width": "0vh",
+                                                                "opacity": 0
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         },
@@ -155,10 +168,20 @@
                                             },
                                             "content": [
                                                 {
-                                                    "section": "Hero2",
+                                                    "direction": "row",
+                                                    "isSymetricalForOpponents": true,
                                                     "style": {
                                                         "width": "var(--journey-hero-width)"
-                                                    }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "section": "Hero2",
+                                                            "style": {
+                                                                "width": "0vh",
+                                                                "opacity": 0
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         },
@@ -172,10 +195,20 @@
                                             },
                                             "content": [
                                                 {
-                                                    "section": "Hero3",
+                                                    "direction": "row",
+                                                    "isSymetricalForOpponents": true,
                                                     "style": {
                                                         "width": "var(--journey-hero-width)"
-                                                    }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "section": "Hero3",
+                                                            "style": {
+                                                                "width": "0vh",
+                                                                "opacity": 0
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -184,7 +217,8 @@
                                 {
                                     "section": "Hidden",
                                     "style": {
-                                        "width": "var(--journey-hidden-width)"
+                                        "width": "var(--journey-hidden-width)",
+                                        "marginTop": "0.5vh"
                                     }
                                 }
                             ]
@@ -215,7 +249,7 @@
                     }
                 },
                 "categoriesAlreadyOnBoard": [
-                    "Adventurer->Hero1"
+                    "Adventurer->Hero2"
                 ],
                 "autoPlayFromHand": {
                     "Ability": "Stack",
@@ -230,23 +264,32 @@
                 "sectionsDict": {
                     "Hero1": {
                         "isHidden": "no",
-                        "height": 17,
+                        "height": 18,
                         "alignment": "NONE",
                         "displayedTitle": "Adventurer 1",
+                        "lockCards": [
+                            "drag"
+                        ],
                         "noQuickActions": true
                     },
                     "Hero2": {
                         "isHidden": "no",
-                        "height": 17,
+                        "height": 18,
                         "alignment": "NONE",
                         "displayedTitle": "Adventurer 2",
+                        "lockCards": [
+                            "drag"
+                        ],
                         "noQuickActions": true
                     },
                     "Hero3": {
                         "isHidden": "no",
-                        "height": 17,
+                        "height": 18,
                         "alignment": "NONE",
                         "displayedTitle": "Adventurer 3",
+                        "lockCards": [
+                            "drag"
+                        ],
                         "noQuickActions": true
                     },
                     "Hidden": {
@@ -271,19 +314,27 @@
                             "playerId": null,
                             "position": null,
                             "pseudo": "",
+                            "priorityStart": null,
+                            "knownPlayers": [],
                             "name1": "",
                             "hp1": 0,
+                            "ko1": false,
                             "agi1": 0,
+                            "baseAgi1": 0,
                             "step1": false,
                             "done1": false,
                             "name2": "",
                             "hp2": 0,
+                            "ko2": false,
                             "agi2": 0,
+                            "baseAgi2": 0,
                             "step2": false,
                             "done2": false,
                             "name3": "",
                             "hp3": 0,
+                            "ko3": false,
                             "agi3": 0,
+                            "baseAgi3": 0,
                             "step3": false,
                             "done3": false
                         },
@@ -296,6 +347,44 @@
                                 }
                             },
                             "children": [
+                                {
+                                    "type": "button",
+                                    "props": {
+                                        "variant": "image",
+                                        "className": "player-only position-absolute",
+                                        "title": "Reset Agility",
+                                        "style": {
+                                            "right": "100%",
+                                            "top": "50%",
+                                            "transform": "translateY(-50%)",
+                                            "marginRight": "var(--journey-gap)",
+                                            "visibility": "{{ [1, 2, 3].some(n => game.data.Stats['agi' + n] !== game.data.Stats['baseAgi' + n]) ? 'visible' : 'hidden' }}",
+                                            "imageRendering": "pixelated"
+                                        }
+                                    },
+                                    "onClick": "resetAgility()",
+                                    "children": [
+                                        {
+                                            "type": "img",
+                                            "props": {
+                                                "className": "btn-image-default",
+                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/reset.png",
+                                                "alt": "",
+                                                "style": {
+                                                    "height": "calc(14 * var(--journey-icon-pixel))"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "img",
+                                            "props": {
+                                                "className": "btn-image-hover",
+                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/reset-pressed.png",
+                                                "alt": ""
+                                            }
+                                        }
+                                    ]
+                                },
                                 {
                                     "type": "div",
                                     "props": {
@@ -393,31 +482,37 @@
                                                 {
                                                     "type": "button",
                                                     "props": {
+                                                        "variant": "image",
                                                         "className": "player-only",
                                                         "title": "Step Back",
                                                         "disabled": "{{ game.data.Stats.step1 }}",
                                                         "style": {
-                                                            "--bs-btn-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png)",
-                                                            "--bs-btn-hover-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png)",
-                                                            "--bs-btn-bg": "transparent",
-                                                            "--bs-btn-hover-bg": "transparent",
-                                                            "--bs-btn-active-bg": "transparent",
-                                                            "--bs-btn-disabled-bg": "transparent",
-                                                            "--bs-btn-border-width": "0",
-                                                            "--bs-btn-padding-x": "0",
-                                                            "--bs-btn-padding-y": "0",
-                                                            "--bs-btn-border-radius": "0",
-                                                            "--bs-btn-focus-box-shadow": "none",
-                                                            "--bs-btn-disabled-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png)",
-                                                            "--bs-btn-disabled-opacity": "1",
-                                                            "backgroundSize": "100% 100%, 0 0",
                                                             "imageRendering": "pixelated",
-                                                            "width": "calc(19 * var(--journey-pixel))",
-                                                            "height": "calc(21 * var(--journey-pixel))",
-                                                            "backgroundRepeat": "no-repeat"
+                                                            "--bs-btn-disabled-opacity": "0.4"
                                                         }
                                                     },
-                                                    "onClick": "await stepBack(1)"
+                                                    "onClick": "await stepBack(1)",
+                                                    "children": [
+                                                        {
+                                                            "type": "img",
+                                                            "props": {
+                                                                "className": "btn-image-default",
+                                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png",
+                                                                "alt": "",
+                                                                "style": {
+                                                                    "height": "calc(14 * var(--journey-icon-pixel))"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "img",
+                                                            "props": {
+                                                                "className": "btn-image-hover",
+                                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png",
+                                                                "alt": ""
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -520,31 +615,37 @@
                                                 {
                                                     "type": "button",
                                                     "props": {
+                                                        "variant": "image",
                                                         "className": "player-only",
                                                         "title": "Step Back",
                                                         "disabled": "{{ game.data.Stats.step2 }}",
                                                         "style": {
-                                                            "--bs-btn-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png)",
-                                                            "--bs-btn-hover-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png)",
-                                                            "--bs-btn-bg": "transparent",
-                                                            "--bs-btn-hover-bg": "transparent",
-                                                            "--bs-btn-active-bg": "transparent",
-                                                            "--bs-btn-disabled-bg": "transparent",
-                                                            "--bs-btn-border-width": "0",
-                                                            "--bs-btn-padding-x": "0",
-                                                            "--bs-btn-padding-y": "0",
-                                                            "--bs-btn-border-radius": "0",
-                                                            "--bs-btn-focus-box-shadow": "none",
-                                                            "--bs-btn-disabled-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png)",
-                                                            "--bs-btn-disabled-opacity": "1",
-                                                            "backgroundSize": "100% 100%, 0 0",
                                                             "imageRendering": "pixelated",
-                                                            "width": "calc(19 * var(--journey-pixel))",
-                                                            "height": "calc(21 * var(--journey-pixel))",
-                                                            "backgroundRepeat": "no-repeat"
+                                                            "--bs-btn-disabled-opacity": "0.4"
                                                         }
                                                     },
-                                                    "onClick": "await stepBack(2)"
+                                                    "onClick": "await stepBack(2)",
+                                                    "children": [
+                                                        {
+                                                            "type": "img",
+                                                            "props": {
+                                                                "className": "btn-image-default",
+                                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png",
+                                                                "alt": "",
+                                                                "style": {
+                                                                    "height": "calc(14 * var(--journey-icon-pixel))"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "img",
+                                                            "props": {
+                                                                "className": "btn-image-hover",
+                                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png",
+                                                                "alt": ""
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -647,31 +748,37 @@
                                                 {
                                                     "type": "button",
                                                     "props": {
+                                                        "variant": "image",
                                                         "className": "player-only",
                                                         "title": "Step Back",
                                                         "disabled": "{{ game.data.Stats.step3 }}",
                                                         "style": {
-                                                            "--bs-btn-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png)",
-                                                            "--bs-btn-hover-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png)",
-                                                            "--bs-btn-bg": "transparent",
-                                                            "--bs-btn-hover-bg": "transparent",
-                                                            "--bs-btn-active-bg": "transparent",
-                                                            "--bs-btn-disabled-bg": "transparent",
-                                                            "--bs-btn-border-width": "0",
-                                                            "--bs-btn-padding-x": "0",
-                                                            "--bs-btn-padding-y": "0",
-                                                            "--bs-btn-border-radius": "0",
-                                                            "--bs-btn-focus-box-shadow": "none",
-                                                            "--bs-btn-disabled-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png)",
-                                                            "--bs-btn-disabled-opacity": "1",
-                                                            "backgroundSize": "100% 100%, 0 0",
                                                             "imageRendering": "pixelated",
-                                                            "width": "calc(19 * var(--journey-pixel))",
-                                                            "height": "calc(21 * var(--journey-pixel))",
-                                                            "backgroundRepeat": "no-repeat"
+                                                            "--bs-btn-disabled-opacity": "0.4"
                                                         }
                                                     },
-                                                    "onClick": "await stepBack(3)"
+                                                    "onClick": "await stepBack(3)",
+                                                    "children": [
+                                                        {
+                                                            "type": "img",
+                                                            "props": {
+                                                                "className": "btn-image-default",
+                                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback.png",
+                                                                "alt": "",
+                                                                "style": {
+                                                                    "height": "calc(14 * var(--journey-icon-pixel))"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "img",
+                                                            "props": {
+                                                                "className": "btn-image-hover",
+                                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/stepback-pressed.png",
+                                                                "alt": ""
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -680,33 +787,40 @@
                                 {
                                     "type": "button",
                                     "props": {
+                                        "variant": "image",
                                         "className": "player-only position-absolute",
                                         "title": "Pass",
                                         "disabled": "{{ !(game.data.Order.active ?? []).some(k => k.startsWith(game.data.Stats.position + '-')) }}",
                                         "style": {
-                                            "--bs-btn-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/pass.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/pass-pressed.png)",
-                                            "--bs-btn-hover-bg-image": "url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/pass-pressed.png), url(https://valcur.github.io/TCG-Arena-Journey/Images/Assets/pass.png)",
-                                            "--bs-btn-bg": "transparent",
-                                            "--bs-btn-hover-bg": "transparent",
-                                            "--bs-btn-active-bg": "transparent",
-                                            "--bs-btn-disabled-bg": "transparent",
-                                            "--bs-btn-border-width": "0",
-                                            "--bs-btn-padding-x": "0",
-                                            "--bs-btn-padding-y": "0",
-                                            "--bs-btn-border-radius": "0",
-                                            "--bs-btn-focus-box-shadow": "none",
-                                            "backgroundSize": "100% 100%, 0 0",
-                                            "imageRendering": "pixelated",
                                             "left": "100%",
                                             "top": "50%",
                                             "transform": "translateY(-50%)",
                                             "marginLeft": "var(--journey-gap)",
-                                            "height": "calc(21 * var(--journey-pixel))",
-                                            "width": "calc(54 * var(--journey-pixel))",
-                                            "backgroundRepeat": "no-repeat"
+                                            "imageRendering": "pixelated"
                                         }
                                     },
-                                    "onClick": "await pass()"
+                                    "onClick": "await pass()",
+                                    "children": [
+                                        {
+                                            "type": "img",
+                                            "props": {
+                                                "className": "btn-image-default",
+                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/pass.png",
+                                                "alt": "",
+                                                "style": {
+                                                    "height": "calc(14 * var(--journey-icon-pixel))"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "img",
+                                            "props": {
+                                                "className": "btn-image-hover",
+                                                "src": "https://valcur.github.io/TCG-Arena-Journey/Images/Assets/pass-pressed.png",
+                                                "alt": ""
+                                            }
+                                        }
+                                    ]
                                 }
                             ]
                         },
