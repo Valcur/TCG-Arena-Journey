@@ -223,8 +223,11 @@ async function newTurn() {
  * onCardsEnter de la section Discard : une carte posée par erreur dans la défausse par défaut part dans le Cycle,
  * l'extra deck face cachée. transitionCards contient les cartes qui viennent d'entrer dans Discard.
  */
+const CYCLE_DELAY_MS = 300
+
 async function cycleCards(transitionCards) {
-    const entered = transitionCards ?? []
+    await new Promise(resolve => setTimeout(resolve, CYCLE_DELAY_MS))
+    const entered = cards.Discard ?? []
     if (entered.length === 0) return
     log("cycleCards:", entered.length, "card(s) from Discard to Cycle")
     await functions.moveCards(entered, "Cycle", { noLogs: true })
