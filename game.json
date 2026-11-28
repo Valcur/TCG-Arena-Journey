@@ -2,7 +2,7 @@
     "name": "The Journey TCG",
     "menuBackgroundImage": "https://valcur.github.io/TCG-Arena-Journey/Images/banner.jpg",
     "scriptsUrls": [
-        "https://valcur.github.io/TCG-Arena-Journey/function.jsx"
+        "https://valcur.github.io/TCG-Arena-Journey/functions.jsx"
     ],
     "cardRotation": 45,
     "defaultRessources": {
